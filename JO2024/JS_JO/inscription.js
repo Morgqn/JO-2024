@@ -1,12 +1,11 @@
 function surligne(champs, erreur) {
-    if (erreur){
+    if (erreur) {
         champs.style.borderColor = "red";
-    }
-    else{
+    } else {
         champs.style.borderColor = "green";
     }
 }
-    
+
 var nom;
 
 function formatAllUpperCase() {
