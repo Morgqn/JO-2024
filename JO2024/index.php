@@ -28,67 +28,7 @@
 
 <body id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-        <div class="container">
-            <a href="index.php"><img src="img/Logo.png"  height="100" width="185" ></a>
-            <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Athletes.php">Athlètes</a>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Sports.php">Sports</a>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Evenements.php">évènements</a>
-                    </li>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Resultats.php">Résultats</a>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="galerie.php">Galerie</a>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1 dropdown">
-                        <a href="#" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
-                        <ul id="login-dp" class="dropdown-menu">
-                            <li>
-                                <div class="col-md-12">
-
-
-                                    <form class="form" role="form" method="post" accept-charset="UTF-8" id="login-nav">
-                                        <div class="form-group">
-                                            <label class="sr-only">Email address</label>
-                                            <input type="email" class="form-control" name="email" placeholder="Email address" <input type="text" name="pseudo" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="sr-only">Password</label>
-                                            <input type="password" class="form-control" name="mdp" placeholder="Password" required>
-                                        </div>
-                                        <div name="log " class="form-group">
-                                            <button type="submit" class="btn btn-primary btn-block" name="log">Sign in</button>
-                                        </div>
-                                        <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#demo-modal-3">Show</button>
-                                        
-
-                                    </form>
-                                </div>
-                                
-                            </li>
-                        </ul>
-                </ul>
-            </div>
-            </li>
-            </ul>
-            </ul>
-        </div>
-        </div>
-    </nav>
+    <?php include("Pages/nav.php") ?>
 
     <!-- Header -->
     <header class="masthead bg-primary text-white text-center" style="background-color: #ab9ec1 !important; padding-bottom: 0;">
@@ -130,7 +70,7 @@
             </div> 
         </div>
     </section>
-        <?php include("footer.php") ?>
+        <?php include("Pages/footer.php") ?>
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-to-top d-lg-none position-fixed ">
         <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
@@ -153,63 +93,9 @@
     <script src="js/freelancer.min.js"></script>
 
     <!-- Modal -->
-    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-
-
-    </script>
-    <link href="style.css/Inscription.css" rel="stylesheet">
-
-    <form class="modal multi-step" id="demo-modal-3">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title step-1" data-step="1">Step 1</h4>
-                    <h4 class="modal-title step-2" data-step="2">Step 2</h4>
-                    <h4 class="modal-title step-3" data-step="3">Final Step</h4>
-                    <div class="m-progress">
-                        <div class="m-progress-bar-wrapper">
-                            <div class="m-progress-bar">
-                            </div>
-                        </div>
-                        <div class="m-progress-stats">
-                            <span class="m-progress-current">
-                        </span> /
-                            <span class="m-progress-total">
-                        </span>
-                        </div>
-                        <div class="m-progress-complete">
-                            Completed
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body step-1" data-step="1">
-                    This is step 1.
-                </div>
-                <div class="modal-body step-2" data-step="2">
-                    This is the second step.
-                </div>
-                <div class="modal-body step-3" data-step="3">
-                    This is the final step.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 1)">Back</button>
-                    <button type="button" class="btn btn-primary step step-1" data-step="1" onclick="sendEvent('#demo-modal-3', 2)">Continue</button>
-                    <button type="button" class="btn btn-primary step step-3" data-step="3" onclick="sendEvent('#demo-modal-3', 2)">Back</button>
-                    <button type="button" class="btn btn-primary step step-2" data-step="2" onclick="sendEvent('#demo-modal-3', 3)">Continue</button>
-                </div>
-            </div>
-        </div>
-    </form>
-
-    <script src="multi-step-modal.js"></script>
-    <script>
-        sendEvent = function(sel, step) {
-            $(sel).trigger('next.m.' + step);
-        }
-
-    </script>
-
+    <?php 
+    include("Pages/form.php");
+    ?>
 </body>
 
 </html>

@@ -25,4 +25,10 @@
         </div>
       </div>
     </footer>
+    
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>Copyright &copy; Jeux Olympiques 2024 - Paris</small>
+      </div>
+    </div>
 
