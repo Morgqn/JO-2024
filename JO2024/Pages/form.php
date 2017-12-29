@@ -9,8 +9,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title step-1" data-step="1">Create Account</h4>
-                <h4 class="modal-title step-2" data-step="2">More Informations</h4>
-                <h4 class="modal-title step-3" data-step="3">Final Step</h4>
+                <h4 class="modal-title step-2" data-step="2">Informations</h4>
+                <h4 class="modal-title step-3" data-step="3">More Informations</h4>
+                <h4 class="modal-title step-4" data-step="4">Avatar</h4>
                 <div class="m-progress">
                     <div class="m-progress-bar-wrapper">
                         <div class="m-progress-bar">
@@ -31,6 +32,11 @@
                 <div class="modal-body step-1" data-step="1">
                     <p><input class="fInput" placeholder="First name..."></p>
                     <p><input class="fInput" placeholder="Last name..."></p>
+                    <p>
+                        <select class="fSelect">
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select></p>
                 </div>
             </center>
             <div class="modal-body step-2" data-step="2">
