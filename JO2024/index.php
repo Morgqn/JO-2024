@@ -78,8 +78,6 @@
 
                                     </form>
                                 </div>
-<<<<<<< HEAD:JO2024/index.html
-=======
                                 <div class="bottom text-center">
                                     New here ? <a href="Inscription.php" onclick="return popitup('Inscription.php')"><b>Join Us</b></a>
 
@@ -100,7 +98,6 @@
                             </li>
                         </ul>
                 </ul>
->>>>>>> f36830d5d5a3ae1004c402bb0237685628aa0535:JO2024/index.php
             </div>
             </li>
             </ul>
