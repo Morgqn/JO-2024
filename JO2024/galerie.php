@@ -29,14 +29,8 @@
   <body id="page-top">
 
      <?php include("Pages/nav.php") ?>
-
-
-    <!-- Header -->
-
-
-    <!-- Portfolio Grid Section -->
-    <section class="portfolio" id="portfolio" style="margin-top: 50px;">
-      <div class="container" style="padding-top: 100px;">
+    <section class="portfolio" id="portfolio">
+      <div class="container" style="padding-top: 50px;">
         <h2 class="text-center text-uppercase text-secondary mb-0">Galerie</h2>
         <hr class="star-dark mb-5">
         <div class="row">
@@ -47,7 +41,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
+              <img class="img-fluid" src="img/portfolio/1.jpg" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -57,7 +51,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+              <img class="img-fluid" src="img/portfolio/2.jpg" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -67,7 +61,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/circus.png" alt="">
+              <img class="img-fluid" src="img/portfolio/3.jpg" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -77,7 +71,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/game.png" alt="">
+              <img class="img-fluid" src="img/portfolio/4.jpg" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -87,7 +81,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/safe.png" alt="">
+              <img class="img-fluid" src="img/portfolio/5.jpg" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -97,7 +91,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
+              <img class="img-fluid" src="img/portfolio/6.jpg" alt="">
             </a>
           </div>
         </div>
