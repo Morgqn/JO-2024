@@ -47,7 +47,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
+              <img class="img-fluid" src="img/portfolio/1.jpg" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -57,7 +57,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+              <img class="img-fluid" src="img/portfolio/2.jpg" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -67,7 +67,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/circus.png" alt="">
+              <img class="img-fluid" src="img/portfolio/3.jpg" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -77,7 +77,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/game.png" alt="">
+              <img class="img-fluid" src="img/portfolio/4.jpg" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -87,7 +87,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/safe.png" alt="">
+              <img class="img-fluid" src="img/portfolio/5.jpg" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -97,7 +97,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
+              <img class="img-fluid" src="img/portfolio/6.jpg" alt="">
             </a>
           </div>
         </div>
