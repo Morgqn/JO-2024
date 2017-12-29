@@ -74,27 +74,11 @@
                                             <button type="submit" class="btn btn-primary btn-block" name="log">Sign in</button>
                                         </div>
                                         <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#demo-modal-3">Show</button>
-
+                                        
 
                                     </form>
                                 </div>
-                                <div class="bottom text-center">
-                                    New here ? <a href="Inscription.php" onclick="return popitup('Inscription.php')"><b>Join Us</b></a>
-
-                                    <script language="javascript" type="text/javascript">
-                                        <!--
-                                        function popitup(url) {
-                                            newwindow = window.open(url, 'name', 'height=600,width=700');
-                                            if (window.focus) {
-                                                newwindow.focus()
-                                            }
-                                            return false;
-                                        }
-
-                                        // -->
-
-                                    </script>
-                                </div>
+                                
                             </li>
                         </ul>
                 </ul>
