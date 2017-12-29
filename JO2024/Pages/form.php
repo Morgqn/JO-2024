@@ -1,7 +1,7 @@
-<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+<!--script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 
-</script>
+</script-->
 <link href="style.css/Inscription.css" rel="stylesheet">
 
 <form class="modal multi-step" id="demo-modal-3">
