@@ -31,7 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
         <div class="container">
-            <a href="index.html"><img src="img/Logo.png"  height="100" width="185" ></a>
+            <a href="index.php"><img src="img/Logo.png"  height="100" width="185" ></a>
             <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -39,20 +39,20 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Athletes.html">Athlètes</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Athletes.php">Athlètes</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Sports.html">Sports</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Sports.php">Sports</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Evenements.html">Evenements</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Evenements.php">évènements</a>
                     </li>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Resultats.html">Resultats</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Resultats.php">Résultats</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="galerie.html">Galerie</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="galerie.php">Galerie</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1 dropdown">
                         <a href="#" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
@@ -78,6 +78,29 @@
 
                                     </form>
                                 </div>
+<<<<<<< HEAD:JO2024/index.html
+=======
+                                <div class="bottom text-center">
+                                    New here ? <a href="Inscription.php" onclick="return popitup('Inscription.php')"><b>Join Us</b></a>
+
+                                    <script language="javascript" type="text/javascript">
+                                        <!--
+                                        function popitup(url) {
+                                            newwindow = window.open(url, 'name', 'height=600,width=700');
+                                            if (window.focus) {
+                                                newwindow.focus()
+                                            }
+                                            return false;
+                                        }
+
+                                        // -->
+
+                                    </script>
+                                </div>
+                            </li>
+                        </ul>
+                </ul>
+>>>>>>> f36830d5d5a3ae1004c402bb0237685628aa0535:JO2024/index.php
             </div>
             </li>
             </ul>
@@ -98,135 +121,41 @@
     <!-- About Section -->
     <section class="bg-primary text-white mb-0" id="about">
         <div class="container">
-            <h2 class="text-center text-uppercase text-white">About</h2>
+            <h2 class="text-center text-uppercase text-white">DERNIÈRES ACTUALITÉS</h2>
             <hr class="star-light mb-5">
             <div class="row">
                 <div class="col-lg-4 ml-auto">
-                    <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                    <p class="lead">Lorem ipsum dolor sit amet, sed natum qualisque ea, nisl suas instructior ei mea, an mel feugait tibique. Modus inciderint dissentiunt vel id, in scripta constituto contentiones vim, sit nibh petentium no.</p>
                 </div>
                 <div class="col-lg-4 mr-auto">
-                    <p class="lead">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                    <p class="lead">An aperiam suscipit salutandi pri. No mollis aliquando mea, magna posse reprimique mel no. At labitur percipitur persequeris per, pro cu mutat torquatos. Ut altera sensibus vituperata mel. Duo error numquam te, est et essent nonumes pericula.</p>
                 </div>
-            </div>
-            <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-light" href="#">
-            <i class="fa fa-download mr-2"></i>
-            Download Now!
-          </a>
-            </div>
+            </div> 
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="alaune">
         <div class="container">
-            <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+            <h2 class="text-center text-uppercase text-secondary mb-0">À LA UNE</h2>
             <hr class="star-dark mb-5">
             <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Name</label>
-                                <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Email Address</label>
-                                <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Phone Number</label>
-                                <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Message</label>
-                                <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
-                        </div>
-                    </form>
+                <div class="col-lg-4 ml-auto">
+                    <p class="lead">Lorem ipsum dolor sit amet, sed natum qualisque ea, nisl suas instructior ei mea, an mel feugait tibique. Modus inciderint dissentiunt vel id, in scripta constituto contentiones vim, sit nibh petentium no.</p>
                 </div>
-            </div>
+                <div class="col-lg-4 mr-auto">
+                    <p class="lead">An aperiam suscipit salutandi pri. No mollis aliquando mea, magna posse reprimique mel no. At labitur percipitur persequeris per, pro cu mutat torquatos. Ut altera sensibus vituperata mel. Duo error numquam te, est et essent nonumes pericula.</p>
+                </div>
+            </div> 
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Location</h4>
-                    <p class="lead mb-0">2215 John Daniel Drive
-                        <br>Clark, MO 65243</p>
-                </div>
-                <div class="col-md-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Around the Web</h4>
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item">
-                            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-facebook"></i>
-                </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-google-plus"></i>
-                </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-twitter"></i>
-                </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-linkedin"></i>
-                </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-dribbble"></i>
-                </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                    <p class="lead mb-0">Freelance is a free to use, open source Bootstrap theme created by
-                        <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <div class="copyright py-4 text-center text-white">
-        <div class="container">
-            <small>Copyright &copy; Your Website 2017</small>
-        </div>
-    </div>
-
+        <?php include("footer.php") ?>
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-to-top d-lg-none position-fixed ">
         <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
         <i class="fa fa-chevron-up"></i>
       </a>
     </div>
-
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

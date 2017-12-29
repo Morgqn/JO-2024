@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Athlètes</title>
+    <title>Sports</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,9 +29,9 @@
   <body id="page-top">
 
     <!-- Navigation -->
-   <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
-          <a href="index.html"><img src="img/Logo.png"  height="100" width="185" ></a>
+          <a href="index.php"><img src="img/Logo.png"  height="100" width="185" ></a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -39,20 +39,20 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Athletes.html">Athlètes</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Athletes.php">Athlètes</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Sports.html">Sports</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Sports.php">Sports</a>
             </li>
               <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Evenements.html">Evenements</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Evenements.php">évènements</a>
               </li>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Resultats.html">Resultats</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Resultats.php">Résultats</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="galerie.html">Galerie</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="galerie.php">Galerie</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1 dropdown">
                <a href="#" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
@@ -87,80 +87,25 @@
     </nav>
 
     <!-- Header -->
-
-
-     <section class="bg-primary text-white mb-0" id="about" >
+     <section class="bg-primary text-white mb-0" id="about">
       <div class="container" style="padding-top: 100px;">
-        <h2 class="text-center text-uppercase text-white">Athlètes</h2>
+        <h2 class="text-center text-uppercase text-white">SPORTS</h2>
         <hr class="star-light mb-5">
         <div class="row">
           <div class="col-lg-4 ml-auto">
-            <p class="lead">Athletes Content (Copyright Sullivan).</p>
+                    <p class="lead">Lorem ipsum dolor sit amet, sed natum qualisque ea, nisl suas instructior ei mea, an mel feugait tibique. Modus inciderint dissentiunt vel id, in scripta constituto contentiones vim, sit nibh petentium no.</p>
           </div>
-          <div class="col-lg-4 mr-auto">
-            <p class="lead">Contenu Athlètes (Copyright Sullivan)</p>
+          <div class="col-lg-4 ml-auto">
+                    <p class="lead">Lorem ipsum dolor sit amet, sed natum qualisque ea, nisl suas instructior ei mea, an mel feugait tibique. Modus inciderint dissentiunt vel id, in scripta constituto contentiones vim, sit nibh petentium no.</p>
           </div>
-        </div>
-        <div class="text-center mt-4">
-          <a class="btn btn-xl btn-outline-light" href="#">
-            <i class="fa fa-download mr-2"></i>
-            Ne pas cliquer Zarma!
-          </a>
         </div>
       </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Location</h4>
-            <p class="lead mb-0">2215 John Daniel Drive
-              <br>Clark, MO 65243</p>
-          </div>
-          <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Around the Web</h4>
-            <ul class="list-inline mb-0">
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-google-plus"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-linkedin"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-dribbble"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h4 class="text-uppercase mb-4">About Freelancer</h4>
-            <p class="lead mb-0">Freelance is a free to use, open source Bootstrap theme created by
-              <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+  <?php include("footer.php"); ?>
 
     <div class="copyright py-4 text-center text-white">
       <div class="container">
-        <small>Copyright &copy; Your Website 2017</small>
+        <small>Copyright &copy; Jeux Olympiques 2024 - Paris</small>
       </div>
     </div>
 
