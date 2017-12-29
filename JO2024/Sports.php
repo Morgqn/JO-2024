@@ -31,7 +31,7 @@
     <!-- Navigation -->
      <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
-          <a href="index.html"><img src="img/Logo.png"  height="100" width="185" ></a>
+          <a href="index.php"><img src="img/Logo.png"  height="100" width="185" ></a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -39,20 +39,20 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Athletes.html">Athlètes</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Athletes.php">Athlètes</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Sports.html">Sports</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Sports.php">Sports</a>
             </li>
               <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Evenements.html">évènements</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Evenements.php">évènements</a>
               </li>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Resultats.html">Résultats</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Resultats.php">Résultats</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="galerie.html">Galerie</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="galerie.php">Galerie</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1 dropdown">
                <a href="#" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
@@ -101,34 +101,7 @@
         </div>
       </div>
     </section>
-  <!-- Footer -->
-    <footer class="footer text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Médias</h4>
-            <p class="lead mb-0"><a href="index.html">DERNIÈRES NEWS</a></p>
-            <p class="lead mb-0"><a href="#">CALENDRIER D'ÉVÉNEMENTS</a></p>
-            <p class="lead mb-0"><a href="galerie.html">PHOTOS</a></p>
-              <br></p>
-          </div>
-          <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">PROGRAMMES</h4>
-            <p class="lead mb-0"><a href="#">SPORT POUR L'ESPOIR</a></p>
-            <p class="lead mb-0"><a href="#">FEMME ET SPORT</a></p>
-            <p class="lead mb-0"><a href="Sports.html">SPORTS</a></p>
-              <br></p>
-            
-          </div>
-          <div class="col-md-4">
-            <h4 class="text-uppercase mb-4">JEUX OLYMPIQUES</h4>
-            <p class="lead mb-0"><a href="#">LES JEUX D'ÉTÉ</a></p>
-            <p class="lead mb-0"><a href="#">LES JEUX D'HIVER</a></p>
-            <p class="lead mb-0"><a href="Resultats.html">RÉSULTATS</a></p>
-          </div>
-        </div>
-      </div>
-    </footer>
+  <?php include("footer.php"); ?>
 
     <div class="copyright py-4 text-center text-white">
       <div class="container">
