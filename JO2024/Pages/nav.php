@@ -43,7 +43,7 @@
                                         <div name="log " class="form-group">
                                             <button type="submit" class="btn btn-primary btn-block" name="log">Sign in</button>
                                         </div>
-                                        <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#demo-modal-3">Show</button>
+                                        <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#demo-modal-3">Join Us ?</button>
                                         
 
                                     </form>
