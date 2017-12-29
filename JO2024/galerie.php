@@ -29,14 +29,8 @@
   <body id="page-top">
 
      <?php include("Pages/nav.php") ?>
-
-
-    <!-- Header -->
-
-
-    <!-- Portfolio Grid Section -->
-    <section class="portfolio" id="portfolio" style="margin-top: 50px;">
-      <div class="container" style="padding-top: 100px;">
+    <section class="portfolio" id="portfolio">
+      <div class="container" style="padding-top: 50px;">
         <h2 class="text-center text-uppercase text-secondary mb-0">Galerie</h2>
         <hr class="star-dark mb-5">
         <div class="row">
