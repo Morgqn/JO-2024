@@ -1,3 +1,25 @@
+<?php
+include ("signUpController.php");
+
+
+$uncontroleur = new SignUpController("localhost","JObdd","root","root");
+$uncontroleur->setTable("myuser");
+
+if(isset($_POST['inscription']))
+{
+    $avatar_path = 'uploads/' . basename($_FILES['avatar']['name']);
+    $resultat = $uncontroleur->signUp($_POST, $avatar_path);
+
+    if($resultat == true)
+    {
+        echo ("<span style= \"color : green;\">inscription reussie.Vous pouvez vous connecter à votre compte</span><br/");  
+    }
+    else
+    {
+        echo "Vos mots de passe ne sont pas identiques";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -77,6 +99,7 @@
         <i class="fa fa-chevron-up"></i>
       </a>
     </div>
+     
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -93,7 +116,7 @@
     <script src="js/freelancer.min.js"></script>
 
     <!-- Modal -->
-    <?php 
+   <?php 
     include("Pages/form.php");
     ?>
 </body>

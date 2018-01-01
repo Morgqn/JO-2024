@@ -87,10 +87,10 @@ function isPhone() {
 
 function verifSecondPage(f) {
     var mailOk = isEmail(f.email);
-    var phoneOk = isPhone(f.phone);
+    //var phoneOk = isPhone(f.phone);
 
 
-    if (mailOk && phoneOk)
+    if (mailOk )
         return true;
     else {
         alert("Veuillez remplir correctement tous les champs");
@@ -147,11 +147,11 @@ function isPass() {
 
 function verifThirdPage(f) {
     var dateOk = isDate(f.date);
-    var usernameOk = isUsername(f.username);
+    //var usernameOk = isUsername(f.username);
     var passOk = isPass(f.pw);
 
 
-    if (dateOk && usernameOk && passOk)
+    if (dateOk && passOk)
         return true;
     else {
         alert("Veuillez remplir correctement tous les champs");
