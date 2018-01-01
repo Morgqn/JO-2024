@@ -1,6 +1,8 @@
 <?php
-include ("signUpController.php");
+session_start();
 
+include("controller.php");
+include ("signUpController.php");
 
 $uncontroleur = new SignUpController("localhost","JObdd","root","root");
 $uncontroleur->setTable("myuser");

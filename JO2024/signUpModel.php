@@ -1,5 +1,5 @@
 <?php
-include ("model.php");
+
 class SignUpModel extends Model
 {
 	function signUp($tab, $avatar_name)
