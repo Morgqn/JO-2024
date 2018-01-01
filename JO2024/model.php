@@ -34,6 +34,23 @@
 				return null;
 			}
 		}
+
+			public function selectAll2()
+		{
+			if($this->pdo != null)
+			{
+				$requete = 'SELECT l.LIBELLE AS LIBELLE_LIEU,e.LIBELLE AS LIBELLE_EVENEMENT,l.ADRESSE,e.DATE,e.TIME,e.ID_EVENEMENT FROM Lieu AS l, Evenement AS e WHERE l.ID_LIEU = e.ID_LIEU';
+				$select = $this->pdo->prepare($requete);
+				$select->execute();
+				$resultats = $select->fetchAll();
+				return $resultats;
+			}
+			else
+			{
+				return null;
+			}
+		}
+
 		//getters and setters
 		public function setTable($uneTable)
 		{
@@ -158,7 +175,7 @@
 
 
 			$requete = "select * from ".$this->table." where ".$chaineclause.";";
-			echo $requete;
+			
 			if($this->pdo != null)
 			{
 				$selectWhere = $this->pdo->prepare($requete);

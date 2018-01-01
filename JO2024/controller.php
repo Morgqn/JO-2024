@@ -16,6 +16,10 @@
 	{
 		return $this->unModele->selectAll();
 	}
+	public function selectAll2()
+	{
+		return $this->unModele->selectAll2();
+	}
 
 	public function logout()
 	{
