@@ -9,32 +9,32 @@ if (isset($_POST['logout']))
 ?>
 
 
-<nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-    <div class="container">
-        <a href="index.php"><img src="img/Logo.png"  height="50" width="100" ></a>
-        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+        <div class="container">
+            <a href="index.php"><img src="img/Logo.png"  height="50" width="100" ></a>
+            <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item mx-0 mx-lg-1">
-                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Athletes.php">Athlètes</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Sports.php">Sports</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Evenements.php">évènements</a>
-            </li>
-        </li>
-        <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Resultats.php">Résultats</a>
-        </li>
-        <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="galerie.php">Galerie</a>
-        </li>
-        <?php
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Athletes.php">Athlètes</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Sports.php">Sports</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Evenements.php">évènements</a>
+                    </li>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Resultats.php">Résultats</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="galerie.php">Galerie</a>
+                    </li>
+                    <?php
         if (!(isset($_SESSION['is_connected']) && $_SESSION['is_connected'] == true))
         {
             echo '<li class="nav-item mx-0 mx-lg-1 dropdown">
@@ -75,16 +75,16 @@ if (isset($_POST['logout']))
             <b>logout</b>
             <span class="caret"></span>
             </a>
-            <ul id="login-dp" class="dropdown-menu">
+            <ul id="login-dp" class="dropdown-menu" style="background : grey;">
             <li>
-            <div class="col-md-12">
+            <div class="col-md-12" style=" background: lightyellow;">
             <form method="POST" action="index.php">
             <div class="col-xs-12">
-            <div class="col-xs-8"><span>Bonjour '.$_SESSION['first_name'].' ! </span></div>';
-            echo'<div class="col-xs-4"><img class=\"avatar\" style="max-height: 50px;
-            margin: 6px auto; ;display: block;" src='.$url.'></div></div>';
+            <center><div class="col-xs-8"><span>Bonjour '.$_SESSION['first_name'].' ! </span></div></center>';
+            echo'<div class="col-xs-4"><img class=\"avatar\" style="max-height: 110px;
+            margin: 13px auto;border: dashed 4px #2D3E4F; ;display: block;" src='.$url.'></div></div>';
             
-            echo'<input class="btn btn-info" type="submit" name="logout" value="se deconnecter">
+            echo'<center><input class="btn btn-info" type="submit" name="logout" value="Logout" style="margin-bottom: 1vw;"></center>
             </div>
             </div>
             </form>
@@ -95,7 +95,7 @@ if (isset($_POST['logout']))
             </li>';
         }
         ?>
-    </ul>
-</div>
-</div>
-</nav>
+                </ul>
+            </div>
+        </div>
+    </nav>
