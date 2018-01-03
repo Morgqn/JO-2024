@@ -50,10 +50,10 @@
             </div>
             <div class="modal-body step-3" data-step="3">
                 <p><input type="date" class="fInput" placeholder="dd" id="date" name="birthDate" onblur="isDate(this)"></p>
-                <p><input type="number" class="fInput" placeholder="age"  name="age"></p>
+                <p><input type="number" class="fInput" placeholder="age"  name="age" id="ageI" onblur="isAge()"></p>
                 <!--p><input class="fInput" placeholder="Username..." name="userame" id="username" onblur="isUsername(this)"></p-->
-                <p><input class="fInput" placeholder="Password..." name="mdp" id="pass" onblur="isPass(this)"></p>
-                <p><input class="fInput" placeholder="confirm Password..." name="mdpc"  onblur="isPass(this)"></p>
+                <p><input class="fInput" type="password" placeholder="Password..." name="mdp" id="pass" onblur="isPass(this)"></p>
+                <p><input class="fInput" type="password" placeholder="Confirm Password..." name="mdpc" id="confirmpass"  onblur="confirmPass()" value=""></p>
             </div>
             <div class="modal-body step-4" data-step="4" >
                 <p><input type="file" class="fInput" name="avatar"></p>
