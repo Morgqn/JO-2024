@@ -67,7 +67,7 @@
             <div class="modal-body step-3" data-step="3">
                 <img src="img/tooltip1.png" data-toggle="tooltip" title="Your age should be between 5 and 125" height=30 style="right: 26px;
                     position: absolute;
-                    top: 125px;"></img>
+                    top: 190px;"></img>
                 <p>
                     <center>
                         <h>Birth Date</h>
