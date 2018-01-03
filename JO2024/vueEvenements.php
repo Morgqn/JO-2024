@@ -1,5 +1,6 @@
 
     <?php
+
     include("controller.php");
     $uncontroleur = new Controller("localhost","JObdd","root","root");
     $uncontroleur->setTable("Evenement");
@@ -29,8 +30,4 @@
             echo '<img src="'.$src.'">';
         }
        
-
-
-
-
     ?>
