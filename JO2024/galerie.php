@@ -41,7 +41,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/portfolio/1.1.jpg" alt="">
+                        <img class="img-fluid" src="img/portfolio/1.2.jpeg" alt="">
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -102,7 +102,7 @@
         <div class="portfolio-modal-dialog bg-white" style="padding: 5px;">
             </a>
             <div class="col-lg-12 mx-auto" style="padding: 0;">
-                <img class="img-fluid mb-5" src="img/portfolio/1.1.jpg" alt="" style="height: -webkit-fill-available;
+                <img class="img-fluid mb-5" src="img/portfolio/1.2.jpeg" alt="" style="height: -webkit-fill-available;
                 width: -webkit-fill-available; margin-bottom: 0px !important;
 }
 ">
