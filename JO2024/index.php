@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 
 include("controller.php");
 include ("signUpController.php");
@@ -21,6 +21,8 @@ if(isset($_POST['inscription']))
         echo "Vos mots de passe ne sont pas identiques";
     }
 }
+
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -52,7 +54,8 @@ if(isset($_POST['inscription']))
 
 <body id="page-top">
 
-    <?php include("Pages/nav.php") ?>
+    <?php
+    include("Pages/nav.php") ?>
 
     <!-- Header -->
     <header class="masthead bg-primary text-white text-center" style="background-color: #ab9ec1 !important; padding-bottom: 0;">

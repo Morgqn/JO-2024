@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("controller.php");
 $uncontroleur = new Controller("localhost","JObdd","root","root");
 $uncontroleur->setTable("Evenement");

@@ -1,6 +1,7 @@
 <!-- Navigation -->
 <?php
-session_start();
+
+
 if (isset($_POST['logout']))
 {
   $uncontroleur = new Controller("localhost","JObdd","root","root");
