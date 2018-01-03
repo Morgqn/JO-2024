@@ -1,5 +1,5 @@
 function coloring(champs, erreur) {
-console.log(champs);
+    console.log(champs);
     if (erreur) {
         champs.style.borderColor = "red";
     } else {
@@ -84,13 +84,52 @@ function isPhone() {
 
 }
 
+var pw;
+
+function isPass() {
+
+    pw = document.getElementById('pass');
+    pw.value = pw.value;
+
+    var upper = /[A-Z]{1}/;
+    var number = /[0-9]{1}/;
+
+    if (!(upper.test(pw.value) && number.test(pw.value))) {
+        coloring(pw, true);
+        return false;
+    } else {
+        coloring(pw, false);
+        return true;
+    }
+}
+
+function confirmPass() {
+
+    var cpw, pw;
+
+    cpw = document.getElementById("confirmpass");
+    //cpw.value = cpw.value;
+    pw = document.getElementById('pass');
+
+    if (cpw.value == "" || pw.value != cpw.value) {
+        coloring(cpw, true);
+        return false;
+    } else {
+        coloring(cpw, false);
+        return true;
+    }
+
+}
+
 
 function verifSecondPage(f) {
     var mailOk = isEmail(f.email);
     //var phoneOk = isPhone(f.phone);
+    var passOk = isPass(f.pw);
+    var confirmOk = confirmPass(f.cpw);
 
 
-    if (mailOk)
+    if (mailOk && passOk && confirmOk)
         return true;
     else {
         alert("Veuillez remplir correctement tous les champs");
@@ -127,68 +166,30 @@ function isUsername() {
     }
 }
 
-var pw;
-
-function isPass() {
-
-    pw = document.getElementById('pass');
-    pw.value = pw.value;
-
-    var upper = /[A-Z]{1}/;
-    var number = /[0-9]{1}/;
-
-    if (!(upper.test(pw.value) && number.test(pw.value))) {
-        coloring(pw, true);
-        return false;
-    } else {
-        coloring(pw, false);
-        return true;
-    }
-}
 
 
-function isAge(){
+function isAge() {
 
     var age = document.getElementById('ageI');
-    
-    if (age.value < 5 || age.value > 120){
-        
+
+    if (age.value < 5 || age.value > 120) {
+
         coloring(age, true);
         return false;
-    }
-    else{
+    } else {
         coloring(age, false);
         return true;
     }
-    
-}   
-function confirmPass() {
-
-    var cpw,pw;
-    
-    cpw = document.getElementById("confirmpass");
-    //cpw.value = cpw.value;
-    pw =document.getElementById('pass');
-
-    if (cpw.value =="" || pw.value != cpw.value) {
-        coloring(cpw, true);
-        return false;
-    }
-    else{
-        coloring(cpw, false);
-        return true;
-    }
 
 }
+
 
 function verifThirdPage(f) {
     var dateOk = isDate(f.date);
     //var usernameOk = isUsername(f.username);
-    var passOk = isPass(f.pw);
-    var confirmOk = confirmPass(f.cpw);
     var ageOk = isAge(f.age);
 
-    if (dateOk && passOk && confirmOk && ageOk)
+    if (dateOk &&  ageOk)
         return true;
     else {
         alert("Veuillez remplir correctement tous les champs");

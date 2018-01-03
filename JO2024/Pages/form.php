@@ -1,7 +1,3 @@
-
-
-
-
 <!--script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 
@@ -9,7 +5,8 @@
 <link href="style.css/Inscription.css" rel="stylesheet">
 
 
-<form class="modal multi-step" id="demo-modal-3" method="POST"  action="index.php" enctype="multipart/form-data">
+
+<form class="modal multi-step" id="demo-modal-3" method="POST" action="index.php" enctype="multipart/form-data">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -35,7 +32,17 @@
             </div>
             <center>
                 <div class="modal-body step-1" data-step="1">
-                    <p><input class="fInput" placeholder="First name..." id="surname" name="firstName" onblur="formatSurname(this)"></p>
+
+
+
+                    <p> <img src="img/tooltip1.png" data-toggle="tooltip" title="First name must be between 2-25 char!" height=30 style="right: 26px;
+                    position: absolute;
+                    top: 36px;"></img>
+                        <img src="img/tooltip1.png" data-toggle="tooltip" title="Last name must be between 2-25 char!" height=30 style="right: 26px;
+                    position: absolute;
+                    top: 125px;"></img>
+
+                        <input class="fInput" placeholder="First name..." id="surname" name="firstName" onblur="formatSurname(this)"> </p>
                     <p><input class="fInput" placeholder="Last name..." id="name" name="lastName" onblur="formatName(this)"></p>
                     <p>
                         <select class="fSelect" id="selectGender" name="gender">
@@ -45,30 +52,46 @@
                 </div>
             </center>
             <div class="modal-body step-2" data-step="2">
-                <p><input class="fInput" type="mail" placeholder="Email" id="mail" onblur="isEmail(this)" name="email"></p>
-                <!--p><input class="fInput" placeholder="Phone" id="phone" onblur="isPhone(this)" name="phone"></p-->
+                <p> <img src="img/tooltip1.png" data-toggle="tooltip" title="Type a real email" height=30 style="right: 26px;
+                    position: absolute;
+                    top: 50px;"></img>
+                    <img src="img/tooltip1.png" data-toggle="tooltip" title="Your pass need at least 1 cap and 1 number" height=30 style="right: 26px;
+                    position: absolute;
+                    top: 139px;"></img>
+
+                    <p><input class="fInput" type="mail" placeholder="Email" id="mail" onblur="isEmail(this)" name="email"></p>
+                    <!--p><input class="fInput" placeholder="Phone" id="phone" onblur="isPhone(this)" name="phone"></p-->
+                    <p><input class="fInput" type="password" placeholder="Password..." name="mdp" id="pass" onblur="isPass(this)"></p>
+                    <p><input class="fInput" type="password" placeholder="Confirm Password..." name="mdpc" id="confirmpass" onblur="confirmPass()" value=""></p>
             </div>
             <div class="modal-body step-3" data-step="3">
-                <p><input type="date" class="fInput" placeholder="dd" id="date" name="birthDate" onblur="isDate(this)"></p>
-                <p><input type="number" class="fInput" placeholder="age"  name="age" id="ageI" onblur="isAge()"></p>
+                <img src="img/tooltip1.png" data-toggle="tooltip" title="Your age should be between 5 and 125" height=30 style="right: 26px;
+                    position: absolute;
+                    top: 125px;"></img>
+                <p>
+                    <center>
+                        <h>Birth Date</h>
+                    </center><input type="date" class="fInput" placeholder="dd" id="date" name="birthDate" onblur="isDate(this)"></p>
+                <p>
+                    <center>
+                        <h>Your Age</h>
+                    </center><input type="number" class="fInput" placeholder="Age" name="age" id="ageI" onblur="isAge()"></p>
                 <!--p><input class="fInput" placeholder="Username..." name="userame" id="username" onblur="isUsername(this)"></p-->
-                <p><input class="fInput" type="password" placeholder="Password..." name="mdp" id="pass" onblur="isPass(this)"></p>
-                <p><input class="fInput" type="password" placeholder="Confirm Password..." name="mdpc" id="confirmpass"  onblur="confirmPass()" value=""></p>
             </div>
-            <div class="modal-body step-4" data-step="4" >
+            <div class="modal-body step-4" data-step="4">
                 <p><input type="file" class="fInput" name="avatar"></p>
 
             </div>
             <div class="modal-footer">
 
-                <button type="button" class="btn btn-primary step step-2" data-step="2" onclick="sendEvent2('#demo-modal-3', 1)">Back</button>
+                <button style="left: 90px; position: absolute;" type="button" class="btn btn-primary step step-2" data-step="2" onclick="sendEvent2('#demo-modal-3', 1)">Back</button>
                 <button type="button" class="btn btn-primary step step-1" data-step="1" onclick="sendEvent1('#demo-modal-3', 2)">Continue</button>
-                <button type="button" class="btn btn-primary step step-3" data-step="3" onclick="sendEvent3('#demo-modal-3', 2)">Back</button>
+                <button style="left: 90px; position: absolute;" type="button" class="btn btn-primary step step-3" data-step="3" onclick="sendEvent3('#demo-modal-3', 2)">Back</button>
                 <button type="button" class="btn btn-primary step step-2" data-step="2" onclick="sendEvent2('#demo-modal-3', 3)">Continue</button>
                 <button type="button" class="btn btn-primary step step-3" data-step="3" onclick="sendEvent3('#demo-modal-3', 4)">Continue</button>
-                <button type="button" class="btn btn-primary step step-4" data-step="4" onclick="sendEvent3('#demo-modal-3', 3)">Back</button>
+                <button style="left: 90px; position: absolute;" type="button" class="btn btn-primary step step-4" data-step="4" onclick="sendEvent3('#demo-modal-3', 3)">Back</button>
                 <button type="Submit" class="btn btn-primary step step-4" data-step="4" name="inscription">Submit</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button style="left: 0; position: absolute;" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
@@ -83,17 +106,25 @@
             $(sel).trigger('next.m.' + step);
         }
     }
-    
+
     sendEvent2 = function(sel, step) {
         if (verifSecondPage(this) === true) {
             $(sel).trigger('next.m.' + step);
         }
     }
-    
+
     sendEvent3 = function(sel, step) {
         if (verifThirdPage(this) === true) {
             $(sel).trigger('next.m.' + step);
         }
     }
+
+</script>
+
+
+<script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
 
 </script>
