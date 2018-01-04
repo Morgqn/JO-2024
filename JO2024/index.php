@@ -49,6 +49,7 @@ if(isset($_POST['inscription']))
 
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
+    
 
 </head>
 
@@ -124,6 +125,7 @@ if(isset($_POST['inscription']))
    <?php 
     include("Pages/form.php");
     ?>
+    
 </body>
 
 </html>
