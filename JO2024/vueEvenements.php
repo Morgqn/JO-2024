@@ -37,8 +37,10 @@
 
         foreach ($links_array as $value) {
 
-            $src = 'evenement_images/'.$date.'/'.$resultat['LIBELLE'].'/'.$value;
-            $_SESSION['currentUrlUpload'] = 'evenement_images/'.$date.'/'.$resultat['LIBELLE'];
+            //$src = 'evenement_images/'.$date.'/'.$resultat['LIBELLE'].'/'.$value;
+            $src = 'evenement_images/'.$date.$resultat['LIBELLE'].$value;
+
+            $_SESSION['currentUrlUpload'] = 'evenement_images/'.$date.$resultat['LIBELLE'];
             if($value != '')
             echo '<img src="'.$src.'">';
         }
