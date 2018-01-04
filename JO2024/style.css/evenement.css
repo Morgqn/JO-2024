@@ -1,0 +1,65 @@
+.sideNav {
+    background: rgba(45, 62, 79, 0.5);
+    height: fit-content;
+    border: 3px dashed black;
+
+}
+
+.ulSideNav {
+    text-align: center;
+}
+
+#buttons li {
+    background-color: #2D3E4F;
+    margin: 10px;
+    padding: 5;
+}
+
+#buttons li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    font-family: "Lucida Console, Monaco, monospace";
+    font-size: 18px;
+}
+
+#buttons li a:hover {
+    text-decoration: none;
+    color: #000000;
+    background-color: #33B5E5;
+}
+
+
+.bodyIframe{
+    text-align: center;
+    border-left: 6px solid red;
+    background-color: lightgrey;
+    font-size: 19px;
+    padding: 10;
+}
+
+body{
+    background: rgba(45, 62, 79, 0.5);
+}
+.imgI{
+    height: 200px;
+    width: 250px;
+    float: left !important;
+    border: 9px solid !important;
+    margin-left: 60;
+    margin-top: 20;
+}
+
+
+
+/* LIGHTBOX*/
+
+
+
+#lightbox .modal-content {
+    display: inline-block;
+    text-align: center;   
+}
+
+
+
