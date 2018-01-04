@@ -50,16 +50,16 @@ if (isset($_POST['logout']))
             <form class="form" form method="POST" action="login/loginVue.php" role="form" accept-charset="UTF-8" id="login-nav">
             <div class="form-group">
             <label class="sr-only">Email address</label>
-            <input type="email" class="form-control" name="email" placeholder="Email address" <input type="text" name="pseudo" required />
+            <input type="email" class="form-control" name="email" placeholder="Email" <input type="text" name="pseudo" required />
             </div>
             <div class="form-group">
             <label class="sr-only">Password</label>
             <input type="password" class="form-control" name="mdp" placeholder="Password" required>
             </div>
             <div name="log " class="form-group">
-            <button type="submit" name="seConnecter" class="btn btn-primary btn-block" >Sign in</button>
+            <button type="submit" name="seConnecter" class="btn btn-primary btn-block" >Se connecter</button>
             </div>
-            <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#demo-modal-3">Join Us ?</button>
+            <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#demo-modal-3">Inscription</button>
             
             
             </form>
@@ -86,7 +86,7 @@ if (isset($_POST['logout']))
             echo'<div class="col-xs-4"><img class=\"avatar\" style="max-height: 110px;
             margin: 13px auto;border: dashed 4px #2D3E4F; ;display: block;" src='.$url.'></div></div>';
             
-            echo'<center><input class="btn btn-info" type="submit" name="logout" value="Logout" style="margin-bottom: 1vw;"></center>
+            echo'<center><input class="btn btn-info" type="submit" name="logout" value="Déconnexion" style="margin-bottom: 1vw;"></center>
             </div>
             </div>
             </form>
