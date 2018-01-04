@@ -1,3 +1,0 @@
-# JO-2024
-Projet IRIS - Jeux Olympiques 2024
---- PENSEZ A BIEN COMMENTER VOTRE CODE ---
