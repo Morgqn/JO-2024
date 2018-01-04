@@ -59,7 +59,7 @@ if (isset($_POST['logout']))
             <div name="log " class="form-group">
             <button type="submit" name="seConnecter" class="btn btn-primary btn-block" >Se connecter</button>
             </div>
-            <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#demo-modal-3">Inscription</button>
+            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#demo-modal-3">Inscription</button>
             
             
             </form>

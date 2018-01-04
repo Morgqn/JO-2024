@@ -91,7 +91,7 @@
                 <button type="button" class="btn btn-primary step step-3" data-step="3" onclick="sendEvent3('#demo-modal-3', 4)">Continue</button>
                 <button style="left: 90px; position: absolute;" type="button" class="btn btn-primary step step-4" data-step="4" onclick="sendEvent3('#demo-modal-3', 3)">Back</button>
                 <button type="Submit" class="btn btn-primary step step-4" data-step="4" name="inscription">Submit</button>
-                <button style="left: 0; position: absolute;" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button style="left: 12px; position: absolute; background-color: grey; opacity: 0.5;" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
