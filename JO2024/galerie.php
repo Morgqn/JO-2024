@@ -185,7 +185,7 @@ session_start();
 }
 ">
             </div>
-            <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+            <a class="close-button d-none d-md-block portfolio-modal-dismiss">
           <i class="fa fa-3x fa-times"></i>
         </div>
     </div>
