@@ -35,6 +35,7 @@
 		$_SESSION['email'] = $_POST['email'];
 		$_SESSION['mdp'] = $_POST['mdp'];
 		$_SESSION['first_name'] = $resultat['FIRSTNAME'];
+		$_SESSION['ID_EVENEMENT_RECIEVED']='';
 		//$_SESSION['profil_type'] = $resultat['profil_type'];
 		if($resultat['AVATAR']== "uploads/")
 		{

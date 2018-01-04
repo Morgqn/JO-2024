@@ -8,6 +8,7 @@ if (isset($_POST['email']) && isset($_POST['mdp'])) {
 	if ($resultat == true)
 	{
 		header ('location: ../index.php');
+		
 	}	
 	else {
 		echo '<body onLoad="alert(\'Veuillez verifier vos identifiants\')">';

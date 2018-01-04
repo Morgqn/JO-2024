@@ -1,5 +1,6 @@
 <?php
 session_start();
+var_dump($_SESSION);
 include("controller.php");
 $uncontroleur = new Controller("localhost","JObdd","root","root");
 $uncontroleur->setTable("Evenement");
@@ -75,7 +76,10 @@ $resultat = $uncontroleur->selectAll2();
         </ul>
       </div>
       <div class="col-md-9 well">
-         <iframe name="myframe" frameborder="no" style="width: 100%;height: 500px;"></iframe>
+
+         <iframe name="myframe" frameborder="no" style="width: 100%;height: 500px;">
+           
+         </iframe>
       </div>
     </div>
 
