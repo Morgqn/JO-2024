@@ -46,7 +46,15 @@ function verifFirstPage(f) {
     if (nomOk && prenomOk)
         return true;
     else {
-        alert("Veuillez remplir correctement tous les champs");
+        popup.alert({
+            content: "Veuillez compléter correctement les champs",
+            modal_size: 'small',
+            btn_align: 'right',
+            effect: 'left',
+            default_btns: {
+                ok: 'Ok'
+            }
+        });
         return false;
     }
 
@@ -132,7 +140,15 @@ function verifSecondPage(f) {
     if (mailOk && passOk && confirmOk)
         return true;
     else {
-        alert("Veuillez remplir correctement tous les champs");
+        popup.alert({
+            content: "Veuillez compléter correctement les champs",
+            modal_size: 'small',
+            btn_align: 'right',
+            effect: 'left',
+            default_btns: {
+                ok: 'Ok'
+            }
+        });
         return false;
     }
 
@@ -189,10 +205,18 @@ function verifThirdPage(f) {
     //var usernameOk = isUsername(f.username);
     var ageOk = isAge(f.age);
 
-    if (dateOk &&  ageOk)
+    if (dateOk && ageOk)
         return true;
     else {
-        alert("Veuillez remplir correctement tous les champs");
+        popup.alert({
+            content: "Veuillez compléter correctement les champs",
+            modal_size: 'small',
+            btn_align: 'right',
+            effect: 'left',
+            default_btns: {
+                ok: 'Ok'
+            }
+        });
         return false;
     }
 
