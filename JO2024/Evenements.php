@@ -34,6 +34,7 @@ $resultat = $uncontroleur->selectAll2();
     color: white !important;
   }
 </style>
+<link href="style.css/evenement.css" rel="stylesheet" type="text/css">
 <!-- Custom fonts for this template -->
 <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -60,12 +61,12 @@ $resultat = $uncontroleur->selectAll2();
   <div class="container" style="padding-top: 50px;">
 
 
-    <h2 class="text-center text-uppercase text-white">évènements</h2>
+    <h2 class="text-center text-uppercase text-white" style="font-size: 30px;">évènements</h2>
     <hr class="star-light mb-5">
 
     <div class="row">
-      <div class="col-md-3">
-        <ul class="nav nav-pills nav-stacked" style="display: block;">
+      <div class="col-md-3 sideNav">
+        <ul class="nav nav-pills nav-stacked ulSideNav" id="buttons" style="display: block;">
           <?php
 
           foreach ($resultat as $unResultat) {
@@ -77,16 +78,12 @@ $resultat = $uncontroleur->selectAll2();
       </div>
       <div class="col-md-9 well">
 
-         <iframe name="myframe" frameborder="no" style="width: 100%;height: 500px;">
+         <iframe width="800" height="768" name="myframe" frameborder="yes">
            
          </iframe>
+         
       </div>
     </div>
-
-
-
-
-
 
   </div>
 </div>
