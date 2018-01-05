@@ -57,17 +57,29 @@ $resultat = $uncontroleur->selectAll();
                         <td>".$unResultat['PRENOM']."</td>
                         <td>".$unResultat['AGE']."</td>
                         <td>".$unResultat['SEXE']."</td>
+                        <br>
                         </tr>"; 
                       }
 
-$uncontroleur->setTable("Sportif");
+                       $uncontroleur->setTable("Sportif");
+                       $resultat = $uncontroleur->selectAll();
 
                       foreach ($resultat as $unResultat)
                       {
                         echo "<tr>
                         <td>".$unResultat['AVATAR']."</td>
-                        </tr>"; 
+                        </tr>
+                        <br>"; 
                       }
+                      $resultat = $uncontroleur->selectFlag();
+                       foreach ($resultat as $unResultat)
+                      {
+                      echo "<tr>
+                       <td>".$unResultat['DRAPEAU']."</td>
+                        </tr>
+                       <br>"; 
+                      }
+                      
                     ?>
                     </p>
           </div>

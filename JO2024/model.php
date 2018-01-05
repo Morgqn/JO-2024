@@ -193,6 +193,20 @@
 			session_unset ();
 			session_destroy ();
 		}
-		
+		public function selectFlag()
+		{
+			$requete = "SELECT DRAPEAU FROM Pays PA, Sportif SP WHERE SP.ID_PAYS = PA.ID_PAYS;";
+			if($this->pdo != null)
+			{
+				$selectWhere = $this->pdo->prepare($requete);
+				$selectWhere->execute();
+				$resultats = $selectWhere->fetchAll();
+				return $resultats;
+			}
+			else
+			{
+				return null;
+			}
+		}
 	}
 ?>
