@@ -3,6 +3,9 @@
 
 </script-->
 <link href="style.css/Inscription.css" rel="stylesheet">
+<link rel="stylesheet" href="css/popupmodal.css" >
+<script src="JS_JO/popupmodal-min.js"></script>
+
 <link rel="stylesheet" type="text/css" href="style.css/backtotop.css">
 <script src="buttonToTop.js"></script>
 
