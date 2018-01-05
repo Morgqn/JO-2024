@@ -1,5 +1,10 @@
 <?php
 session_start();
+var_dump($_SESSION);
+include("controller.php");
+$uncontroleur = new Controller("localhost","JObdd","root","root");
+$uncontroleur->setTable("Personne");
+$resultat = $uncontroleur->selectAll();
 ?>
 
 <!DOCTYPE html>
@@ -43,10 +48,31 @@ session_start();
         <hr class="star-light mb-5">
         <div class="row">
           <div class="col-lg-4 ml-auto">
-                    <p class="lead">Lorem ipsum dolor sit amet, sed natum qualisque ea, nisl suas instructior ei mea, an mel feugait tibique. Modus inciderint dissentiunt vel id, in scripta constituto contentiones vim, sit nibh petentium no.</p>
+                    <p class="lead">
+                    <?php
+                      foreach ($resultat as $unResultat)
+                      {
+                        echo "<tr>
+                        <td>".$unResultat['NOM']."</td>
+                        <td>".$unResultat['PRENOM']."</td>
+                        <td>".$unResultat['AGE']."</td>
+                        <td>".$unResultat['SEXE']."</td>
+                        </tr>"; 
+                      }
+
+$uncontroleur->setTable("Sportif");
+
+                      foreach ($resultat as $unResultat)
+                      {
+                        echo "<tr>
+                        <td>".$unResultat['AVATAR']."</td>
+                        </tr>"; 
+                      }
+                    ?>
+                    </p>
           </div>
           <div class="col-lg-4 ml-auto">
-                    <p class="lead">Lorem ipsum dolor sit amet, sed natum qualisque ea, nisl suas instructior ei mea, an mel feugait tibique. Modus inciderint dissentiunt vel id, in scripta constituto contentiones vim, sit nibh petentium no.</p>
+                    <p class="lead"></p>
           </div>
         </div>
       </div>
