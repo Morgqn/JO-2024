@@ -8,7 +8,6 @@ $resultat = $uncontroleur->selectAll();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
-
   <head>
     <link rel="shortcut icon" href="img/LogoJO.png" type="image/x-icon"/>
     <meta charset="utf-8">
@@ -20,7 +19,7 @@ $resultat = $uncontroleur->selectAll();
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="style.css/Sport.css" rel="stylesheet">
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -41,28 +40,22 @@ $resultat = $uncontroleur->selectAll();
     <!-- Header -->
      <section class="bg-primary text-white mb-0" id="about">
       <div class="container" style="padding-top: 50px;">
-        <h2 class="text-center text-uppercase text-white">SPORTS</h2>
+        <h2 class="text-center text-uppercase text-white titre">SPORTS</h2>
         <hr class="star-light mb-5">
         <div class="row">
-          <div class="col-lg-4 ml-auto">
-                    <p class="lead">
+          <div class="col-md-12">
+                    <table>
                     <?php
                       foreach ($resultat as $unResultat)
                       {
-                        echo "<tr>
-                        <td>".$unResultat['LIBELLE']."<br></td>
+                        echo "
+                        <td>".$unResultat['LIBELLE']."</td>
                         <br>
-                        </tr>"; 
+                        "; 
                       }
                       ?>
-
-
-
-
-
-
-
-                    </p>
+                    </table>
+                    
           </div>
           <div class="col-lg-4 ml-auto">
                     <p class="lead"></p>
