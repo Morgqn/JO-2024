@@ -86,12 +86,12 @@
             </div>
             <div class="modal-footer">
 
-                <button style="left: 90px; position: absolute;" type="button" class="btn btn-primary step step-2" data-step="2" onclick="sendEvent2('#demo-modal-3', 1)">Back</button>
+                <button style="left: 90px; position: absolute;" type="button" class="btn btn-primary step step-2" data-step="2" onclick="sendEventB('#demo-modal-3', 1)">Back</button>
                 <button type="button" class="btn btn-primary step step-1" data-step="1" onclick="sendEvent1('#demo-modal-3', 2)">Continue</button>
-                <button style="left: 90px; position: absolute;" type="button" class="btn btn-primary step step-3" data-step="3" onclick="sendEvent3('#demo-modal-3', 2)">Back</button>
+                <button style="left: 90px; position: absolute;" type="button" class="btn btn-primary step step-3" data-step="3" onclick="sendEventB('#demo-modal-3', 2)">Back</button>
                 <button type="button" class="btn btn-primary step step-2" data-step="2" onclick="sendEvent2('#demo-modal-3', 3)">Continue</button>
                 <button type="button" class="btn btn-primary step step-3" data-step="3" onclick="sendEvent3('#demo-modal-3', 4)">Continue</button>
-                <button style="left: 90px; position: absolute;" type="button" class="btn btn-primary step step-4" data-step="4" onclick="sendEvent3('#demo-modal-3', 3)">Back</button>
+                <button style="left: 90px; position: absolute;" type="button" class="btn btn-primary step step-4" data-step="4" onclick="sendEventB('#demo-modal-3', 3)">Back</button>
                 <button type="Submit" class="btn btn-primary step step-4" data-step="4" name="inscription">Submit</button>
                 <button style="left: 12px; position: absolute; background-color: grey; opacity: 0.5;" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
@@ -119,6 +119,11 @@
         if (verifThirdPage(this) === true) {
             $(sel).trigger('next.m.' + step);
         }
+    }    
+    // Event for back button //
+    
+    sendEventB = function(sel, step) {
+            $(sel).trigger('next.m.' + step);
     }
 
 </script>
