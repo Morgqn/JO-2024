@@ -1,5 +1,10 @@
 <?php
 session_start();
+include("controller.php");
+$uncontroleur = new Controller("localhost","JObdd","root","root");
+$uncontroleur->setTable("Sport");
+$resultat = $uncontroleur->selectAll();
+?>
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -40,7 +45,24 @@ session_start();
         <hr class="star-light mb-5">
         <div class="row">
           <div class="col-lg-4 ml-auto">
-                    <p class="lead"></p>
+                    <p class="lead">
+                    <?php
+                      foreach ($resultat as $unResultat)
+                      {
+                        echo "<tr>
+                        <td>".$unResultat['LIBELLE']."<br></td>
+                        <br>
+                        </tr>"; 
+                      }
+                      ?>
+
+
+
+
+
+
+
+                    </p>
           </div>
           <div class="col-lg-4 ml-auto">
                     <p class="lead"></p>
