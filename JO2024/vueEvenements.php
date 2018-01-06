@@ -6,10 +6,10 @@
            if ((isset($_SESSION['is_connected']) && $_SESSION['is_connected'] == true))
         {
             echo '
-            <form action="multiple-uploads.php" enctype="multipart/form-data" method="POST">
-            Select images: <input type="file" name="upload[]" multiple>
-                <input type="submit">
-            </form>
+            <center><h1 style="font-size: 19px; padding-top: 20px; color: white;">You can add images for this event</h1><form action="multiple-uploads.php" enctype="multipart/form-data" method="POST" style="padding-top:30px; padding-bottom: 30px;">
+            <input class="btn btn-info" type="file" name="upload[]" multiple style="width: 300px;">
+                <input class="btn btn-info" type="submit">
+            </form></center>
             ';
         }
         

@@ -11,7 +11,7 @@ if (isset($_POST['logout']))
 ?>
 
 
-    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav" style="font-family: none;">
         <div class="container">
             <a href="index.php"><img src="img/Logo.png"  height="50" width="100" ></a>
             <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
