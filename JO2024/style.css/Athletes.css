@@ -4,10 +4,10 @@ table {
     text-align: left;
     background-color: #2c3e50;
     color: white;
-    width : 100;
     font-size: 20;
     font-family: Montserrat;
     width: fit-content !important;
+    margin: 30px;
 }
 td {
 
@@ -15,8 +15,6 @@ td {
 	padding: 15px;
     text-align: left;
     width : 150;
-    margin: 50;
-    padding-right: 20;
     
 
 }

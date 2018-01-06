@@ -61,7 +61,7 @@ if(isset($_POST['inscription']))
 
             <!-- Header -->
             <header class="text-white text-center" style="padding-top: 30px !important ;background: transparent url('img/HeaderJO2024.jpg') no-repeat !important;
-                 !important; background-size: 100% 100% !important;">
+                 !important; background-size: 100% 100% !important; padding-top: 60px !important;">
                 <div class="container">
                     <img class="img-fluid mb-5 d-block mx-auto" src="img/JoTransparent.png" alt="" height="400" width="450" style="margin-bottom: 0 !important;">
                 </div>

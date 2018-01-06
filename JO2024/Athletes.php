@@ -47,9 +47,10 @@ $resultat = $uncontroleur->selectAll();
             <div class="container-fluid" style="padding-top: 50px;">
                 <h2 class="text-center text-uppercase text-white titre">Athlètes</h2>
                 <hr class="star-light mb-5">
-                <div class="row">
-                        <table class="col-lg-4">
-                                <?php
+                
+                <div class="row" style="padding: 0 150px 0 150px;">
+                    <table>
+                        <?php
                       foreach ($resultat as $unResultat)
                       {
                         echo "<tr>
@@ -61,9 +62,9 @@ $resultat = $uncontroleur->selectAll();
                         </tr>"; 
                       }
                     ?>
-                            </table>
-                            <table>
-                                <?php
+                    </table>
+                    <table>
+                        <?php
                        $uncontroleur->setTable("Sportif");
                        $resultat = $uncontroleur->selectAll();
 
@@ -75,9 +76,9 @@ $resultat = $uncontroleur->selectAll();
                         <br>"; 
                       }
                       ?>
-                            </table>
-                            <table>
-                                <?php
+                    </table>
+                   <table>
+                        <?php
                       $resultat = $uncontroleur->selectFlag();
                        foreach ($resultat as $unResultat)
                       {
@@ -88,10 +89,10 @@ $resultat = $uncontroleur->selectAll();
                       }
                       
                     ?>
-                            </table>
-                        </p>
-                    </div>
+                    </table>
+                    </p>
                 </div>
+            </div>
             </div>
         </section>
         <?php include("Pages/footer.php"); ?>
