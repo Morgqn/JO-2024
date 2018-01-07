@@ -4,6 +4,7 @@ session_start();
 include("controller.php");
 include ("signUpController.php");
 
+
 $uncontroleur = new SignUpController("localhost","JObdd","root","root");
 $uncontroleur->setTable("myuser");
 
@@ -26,7 +27,7 @@ if(isset($_POST['inscription']))
 ?>
     <!DOCTYPE html>
     <html lang="fr">
-
+    
     <head>
         <link rel="shortcut icon" href="img/LogoJO.png" type="image/x-icon" />
         <meta charset="utf-8">
@@ -38,6 +39,8 @@ if(isset($_POST['inscription']))
 
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
         <!-- Custom fonts for this template -->
         <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -50,6 +53,7 @@ if(isset($_POST['inscription']))
         <!-- Custom styles for this template -->
         <link href="css/freelancer.min.css" rel="stylesheet">
         <link href="style.css/header.css" rel="stylesheet">
+        <link href="style.css/socialMedia.css" rel="stylesheet">
 
 
     </head>
@@ -57,7 +61,8 @@ if(isset($_POST['inscription']))
     <body id="page-top">
 
         <?php
-    include("Pages/nav.php") ?>
+    include("Pages/nav.php");
+        include("Pages/socialMediaSideBar.php");?>
 
             <!-- Header -->
             <header class="text-white text-center" style="padding-top: 30px !important ;background: transparent url('img/HeaderJO2024.jpg') no-repeat !important;
@@ -100,7 +105,8 @@ if(isset($_POST['inscription']))
                     </div>
                 </div>
             </section>
-            <?php include("Pages/footer.php") ?>
+            <?php include("Pages/footer.php");?>
+
             <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
             <div class="scroll-to-top d-lg-none position-fixed ">
                 <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
