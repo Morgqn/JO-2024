@@ -1,6 +1,7 @@
+<link href="style.css/socialMedia.css" rel="stylesheet">
 <!-- Navigation -->
 <?php
-
+ include("Pages/socialMediaSideBar.php");
 
 if (isset($_POST['logout']))
 {

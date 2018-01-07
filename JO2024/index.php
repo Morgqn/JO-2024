@@ -27,7 +27,7 @@ if(isset($_POST['inscription']))
 ?>
     <!DOCTYPE html>
     <html lang="fr">
-    
+
     <head>
         <link rel="shortcut icon" href="img/LogoJO.png" type="image/x-icon" />
         <meta charset="utf-8">
@@ -53,7 +53,7 @@ if(isset($_POST['inscription']))
         <!-- Custom styles for this template -->
         <link href="css/freelancer.min.css" rel="stylesheet">
         <link href="style.css/header.css" rel="stylesheet">
-        <link href="style.css/socialMedia.css" rel="stylesheet">
+
 
 
     </head>
@@ -61,8 +61,7 @@ if(isset($_POST['inscription']))
     <body id="page-top">
 
         <?php
-    include("Pages/nav.php");
-        include("Pages/socialMediaSideBar.php");?>
+    include("Pages/nav.php");?>
 
             <!-- Header -->
             <header class="text-white text-center" style="padding-top: 30px !important ;background: transparent url('img/HeaderJO2024.jpg') no-repeat !important;
@@ -71,6 +70,51 @@ if(isset($_POST['inscription']))
                     <img class="img-fluid mb-5 d-block mx-auto" src="img/JoTransparent.png" alt="" height="400" width="450" style="margin-bottom: 0 !important;">
                 </div>
             </header>
+
+
+
+            <style>
+                #days,
+                #hours,
+                #minutes,
+                #seconds {
+                    display: inline;
+                    padding: 15px;
+                    border: 10px solid #111;
+                    box-shadow: 35px 35px 7px #999999;
+                    border-bottom-right-radius: 15px;
+                    border-radius: 25px;
+                    padding: 15px 25px;
+                    margin: 40px;
+                    font-size: 40px;
+                    background-color: #2D3E4F;
+                    color: white;
+
+                }
+                
+                #days{
+                    
+                    border-color: #1486C5;
+                }
+                
+                #minutes{
+                    border-color: #DD1232;
+                }
+                
+                #seconds{
+                    border-color: #F3C22C;
+                }
+
+            </style>
+
+            <div class="container">
+                <div class="row" style="place-content: center;">
+                    <p id="days"></p>
+                    <p id="hours"></p>
+                    <p id="minutes"></p>
+                    <p id="seconds"></p>
+                </div>
+            </div>
 
             <!-- Portfolio Grid Section -->
 
@@ -128,6 +172,9 @@ if(isset($_POST['inscription']))
 
             <!-- Custom scripts for this template -->
             <script src="js/freelancer.min.js"></script>
+            <script src="JS_JO/coutdown.js"></script>
+
+
 
             <!-- Modal -->
             <?php 

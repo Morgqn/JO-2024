@@ -42,10 +42,10 @@
 
                     <p> <img src="img/tooltip1.png" data-toggle="tooltip" title="First name must be between 2-25 char!" height=30 style="right: 26px;
                     position: absolute;
-                    top: 36px;"></img>
+                    top: 40px;"></img>
                         <img src="img/tooltip1.png" data-toggle="tooltip" title="Last name must be between 2-25 char!" height=30 style="right: 26px;
                     position: absolute;
-                    top: 125px;"></img>
+                    top: 137px;"></img>
 
                         <input class="fInput" placeholder="First name..." id="surname" name="firstName" onblur="formatSurname(this)"> </p>
                     <p><input class="fInput" placeholder="Last name..." id="name" name="lastName" onblur="formatName(this)"></p>
@@ -59,10 +59,10 @@
             <div class="modal-body step-2" data-step="2">
                 <p> <img src="img/tooltip1.png" data-toggle="tooltip" title="Type a real email" height=30 style="right: 26px;
                     position: absolute;
-                    top: 50px;"></img>
+                    top: 59px;"></img>
                     <img src="img/tooltip1.png" data-toggle="tooltip" title="Your pass need at least 1 cap and 1 number" height=30 style="right: 26px;
                     position: absolute;
-                    top: 139px;"></img>
+                    top: 157px;"></img>
 
                     <p><input class="fInput" type="mail" placeholder="Email" id="mail" onblur="isEmail(this)" name="email"></p>
                     <!--p><input class="fInput" placeholder="Phone" id="phone" onblur="isPhone(this)" name="phone"></p-->
@@ -72,7 +72,7 @@
             <div class="modal-body step-3" data-step="3">
                 <img src="img/tooltip1.png" data-toggle="tooltip" title="Your age should be between 5 and 125" height=30 style="right: 26px;
                     position: absolute;
-                    top: 190px;"></img>
+                    top: 218px;"></img>
                 <p>
                     <center>
                         <h>Birth Date</h>
@@ -89,12 +89,12 @@
             </div>
             <div class="modal-footer">
 
-                <button style="left: 90px; position: absolute;" type="button" class="btn btn-primary step step-2" data-step="2" onclick="sendEventB('#demo-modal-3', 1)">Back</button>
+                <button style="left: 110px; position: absolute;" type="button" class="btn btn-primary step step-2" data-step="2" onclick="sendEventB('#demo-modal-3', 1)">Back</button>
                 <button type="button" class="btn btn-primary step step-1" data-step="1" onclick="sendEvent1('#demo-modal-3', 2)">Continue</button>
-                <button style="left: 90px; position: absolute;" type="button" class="btn btn-primary step step-3" data-step="3" onclick="sendEventB('#demo-modal-3', 2)">Back</button>
+                <button style="left: 110px !important; position: absolute;" type="button" class="btn btn-primary step step-3" data-step="3" onclick="sendEventB('#demo-modal-3', 2)">Back</button>
                 <button type="button" class="btn btn-primary step step-2" data-step="2" onclick="sendEvent2('#demo-modal-3', 3)">Continue</button>
                 <button type="button" class="btn btn-primary step step-3" data-step="3" onclick="sendEvent3('#demo-modal-3', 4)">Continue</button>
-                <button style="left: 90px; position: absolute;" type="button" class="btn btn-primary step step-4" data-step="4" onclick="sendEventB('#demo-modal-3', 3)">Back</button>
+                <button style="left: 110px; position: absolute;" type="button" class="btn btn-primary step step-4" data-step="4" onclick="sendEventB('#demo-modal-3', 3)">Back</button>
                 <button type="Submit" class="btn btn-primary step step-4" data-step="4" name="inscription">Submit</button>
                 <button style="left: 12px; position: absolute; background-color: grey; opacity: 0.5;" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>

@@ -188,7 +188,7 @@ function isAge() {
 
     var age = document.getElementById('ageI');
 
-    if (age.value < 5 || age.value > 120) {
+    if (age.value < 5 || age.value > 125) {
 
         coloring(age, true);
         return false;
