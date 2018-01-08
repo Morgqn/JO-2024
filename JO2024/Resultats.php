@@ -1,5 +1,9 @@
 <?php
 session_start();
+var_dump($_SESSION);
+include("controller.php");
+$uncontroleur = new Controller("localhost","JObdd","root","root");
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -26,7 +30,16 @@ session_start();
 
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
-
+  <style type="text/css">
+  @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+  body{margin-top:20px;}
+  .fa-fw {width: 2em;
+  }
+  a 
+  {
+    color: white !important;
+  }
+</style>
   </head>
 
   <body id="page-top">
@@ -41,6 +54,26 @@ session_start();
       <div class="container" style="padding-top: 50px;">
         <h2 class="text-center text-uppercase text-white">Résultats</h2>
         <hr class="star-light mb-5">
+         <div class="row">
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked" style="display: block;">
+          <?php
+          $uncontroleur->setTable("Sport");
+          $resultat = $uncontroleur->selectAll();
+          foreach ($resultat as $unResultat) {
+
+            echo '<li ><a href="vueResultats.php?id='.$unResultat['ID_SPORT'].'" target="myframe">'.$unResultat['LIBELLE'].'</a></li>';
+          }
+          ?>
+        </ul>
+      </div>
+      <div class="col-md-9 well">
+
+         <iframe name="myframe" frameborder="no" style="width: 100%;height: 500px;">
+           
+         </iframe>
+      </div>
+    </div>
         <div class="row">
           <div class="col-lg-4 ml-auto">
                     <p class="lead">Lorem ipsum dolor sit amet, sed natum qualisque ea, nisl suas instructior ei mea, an mel feugait tibique. Modus inciderint dissentiunt vel id, in scripta constituto contentiones vim, sit nibh petentium no.</p>
