@@ -15,10 +15,13 @@
     $personne = $uncontroleur->selectwhere($tab);
     $uncontroleur->setTable("Pays");
     $tab = array("ID_PAYS"=>$sportif['ID_PAYS']);
+    $pays = $uncontroleur->selectwhere($tab);
+
 
     echo '<center><b>Fiche du sportif</b></center>';
     
     echo'<img style="max-height: 50px;" src="avatars/'.$sportif['AVATAR'].'"></div>';
+    echo'<img style="max-height: 50px;" src="Flags/'.$pays['DRAPEAU'].'"></div>';
     
     echo'<div> NOM :'.$personne['NOM'].'</div>';
     echo '<div> PRENOM :' .$personne['PRENOM'].'</div>';
