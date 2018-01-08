@@ -83,7 +83,7 @@ $resultat = $uncontroleur->selectAll();
       </div>
       <div class="col-md-9 well">
 
-         <iframe width="800" height="768" name="myframe" frameborder="yes">
+         <iframe width="850" height="668" name="myframe" frameborder="yes">
            
          </iframe>
          

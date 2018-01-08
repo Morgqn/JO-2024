@@ -18,18 +18,35 @@
     $pays = $uncontroleur->selectwhere($tab);
 
 
-    echo '<center><b>Fiche du sportif</b></center>';
+    echo '<center><h1 class="Dh1">Fiche du sportif</h1></center>';
     
-    echo'<img style="max-height: 50px;" src="avatars/'.$sportif['AVATAR'].'"></div>';
-    echo'<img style="max-height: 50px;" src="Flags/'.$pays['DRAPEAU'].'"></div>';
+ echo'<center><div class="containers name"><div class="divS"> NOM : '.$personne['NOM'].'</div></div>';
+    echo '<div class="containers surname""><div class="divS"> PRENOM : ' .$personne['PRENOM'].'</div></div>';
+    echo '<div class="containers sexe""><div class="divS"> SEXE : '.$personne['SEXE'].'</div></div>';
+    echo '<div class="containers age""><div class="divS"> AGE : '.$personne['AGE'].'</div></div>';
+    echo '<div class="containers naissance""><div class="divS"> Lieu de naissance : '.$sportif['LIEU_DE_NAISSANCE'].'</div></div>';
+    echo '<div class="containers poids""><div class="divS"> Poids: '.$sportif['POIDS'].'</div></div>';
+    echo'<div class="containers taille""><div class="divS"> Taille : '.$sportif['TAILLE'].'</div></div></center>';
+
+
+    echo'<img style="max-height: 100px;margin: 30px; position: absolute;
+    top: 45vw;" src="Flags/'.$pays['DRAPEAU'].'"></div>';
+
+                            echo'<div class="container">
+                            <a href="'.$sportif['AVATAR'].'" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+                                <img class="imgI2" style="margin: 30px; position: absolute; top: 25vw;" src="avatars/'.$sportif['AVATAR'].'">
+                            </a>
+                    </div>';
+
+
+                    echo'<div class="container">
+                            <a href="'.$sportif['AVATAR'].'" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+                                <img class="imgI2" style="margin: 30px; position: absolute;
+                                top: 45vw;" src="Flags/'.$pays['DRAPEAU'].'">
+                            </a>
+                    </div>';
     
-    echo'<div> NOM :'.$personne['NOM'].'</div>';
-    echo '<div> PRENOM :' .$personne['PRENOM'].'</div>';
-    echo '<div> SEXE : '.$personne['SEXE'].'</div>';
-    echo '<div> AGE : '.$personne['AGE'].'</div>';
-    echo '<div> Lieu de naissance : '.$sportif['LIEU_DE_NAISSANCE'].'</div>';
-    echo '<div> Poids: '.$sportif['POIDS'].'</div>';
-    echo'<div> Taille : '.$sportif['TAILLE'].'</div>';
+   
 
     ?>
     <!-- Bootstrap core JavaScript -->
@@ -61,6 +78,7 @@
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
     <link href="style.css/evenement.css" rel="stylesheet" type="text/css">
+    <link href="style.css/Athletes.css" rel="stylesheet" type="text/css">
 
     <!-- Light Box -->
     <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
