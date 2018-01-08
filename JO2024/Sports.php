@@ -1,9 +1,13 @@
 <?php
 session_start();
+include("controller.php");
+$uncontroleur = new Controller("localhost","JObdd","root","root");
+$uncontroleur->setTable("Sport");
+$resultat = $uncontroleur->selectAll();
+?>
 ?>
 <!DOCTYPE html>
 <html lang="fr">
-
   <head>
     <link rel="shortcut icon" href="img/LogoJO.png" type="image/x-icon"/>
     <meta charset="utf-8">
@@ -15,7 +19,7 @@ session_start();
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="style.css/Sport.css" rel="stylesheet">
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -36,14 +40,25 @@ session_start();
     <!-- Header -->
      <section class="bg-primary text-white mb-0" id="about">
       <div class="container" style="padding-top: 50px;">
-        <h2 class="text-center text-uppercase text-white">SPORTS</h2>
+        <h2 class="text-center text-uppercase text-white titre">SPORTS</h2>
         <hr class="star-light mb-5">
         <div class="row">
-          <div class="col-lg-4 ml-auto">
-                    <p class="lead">Lorem ipsum dolor sit amet, sed natum qualisque ea, nisl suas instructior ei mea, an mel feugait tibique. Modus inciderint dissentiunt vel id, in scripta constituto contentiones vim, sit nibh petentium no.</p>
+          <div class="col-md-12">
+                    <table>
+                    <?php
+                      foreach ($resultat as $unResultat)
+                      {
+                        echo "
+                        <td>".$unResultat['LIBELLE']."</td>
+                        <br>
+                        "; 
+                      }
+                      ?>
+                    </table>
+                    
           </div>
           <div class="col-lg-4 ml-auto">
-                    <p class="lead">Lorem ipsum dolor sit amet, sed natum qualisque ea, nisl suas instructior ei mea, an mel feugait tibique. Modus inciderint dissentiunt vel id, in scripta constituto contentiones vim, sit nibh petentium no.</p>
+                    <p class="lead"></p>
           </div>
         </div>
       </div>

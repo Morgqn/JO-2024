@@ -47,6 +47,12 @@
 	{
 		 return $this->unModele->selectwhere($tab);
 	}
+		public function selectFlag()
+		{
+			$select = $this->unModele->selectFlag();
+
+			return $select;
+		}
 	}
 
 ?>

@@ -76,10 +76,10 @@ $uncontroleur = new Controller("localhost","JObdd","root","root");
     </div>
         <div class="row">
           <div class="col-lg-4 ml-auto">
-                    <p class="lead">Lorem ipsum dolor sit amet, sed natum qualisque ea, nisl suas instructior ei mea, an mel feugait tibique. Modus inciderint dissentiunt vel id, in scripta constituto contentiones vim, sit nibh petentium no.</p>
+                    <p class="lead"></p>
           </div>
           <div class="col-lg-4 ml-auto">
-                    <p class="lead">Lorem ipsum dolor sit amet, sed natum qualisque ea, nisl suas instructior ei mea, an mel feugait tibique. Modus inciderint dissentiunt vel id, in scripta constituto contentiones vim, sit nibh petentium no.</p>
+                    <p class="lead"></p>
           </div>
         </div>
       </div>

@@ -21,11 +21,10 @@
                 <p class="lead mb-0"><a href="#">LES JEUX D'ÉTÉ</a></p>
                 <p class="lead mb-0"><a href="#">LES JEUX D'HIVER</a></p>
                 <p class="lead mb-0"><a href="Resultats.php">RÉSULTATS</a></p>
+                
+
             </div>
         </div>
-    </div>
-    
-
 </footer>
 
 <div class="copyright py-4 text-center text-white">
