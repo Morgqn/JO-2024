@@ -7,15 +7,39 @@
     
     //$resultat = $uncontroleur->selectAll2(); 
     $tab = array("ID_SPORT"=>$_GET['id']);
-    $uncontroleur->setTable("Pratiquer");
-    $resultat = $uncontroleur->selectwhere($tab);
-    $tab = array("ID_PERSONNE"=>$resultat['ID_PERSONNE']);
-    $uncontroleur->setTable("Personne");
-    $personne = $uncontroleur->selectwhere($tab);
-    $uncontroleur->setTable("Sportif");
-    $sportif = $uncontroleur->selectwhere($tab);
+    $uncontroleur->setTable("resultat");
+    $resultats[] = $uncontroleur->selectwhere($tab);
 
-        echo "personne : ".$personne['NOM']." le poids :".$sportif['POIDS'].'<br>';
+
+    echo '<table border=1>
+    <thead>
+        <th>Medaille</th>
+        <th>Pays</th>
+        <th>avatar</th>
+        <th>nom</th>
+        <th>Prenom</th>
+ 
+        
+    </thead>
+    <tbody>';
+
+    // echo '<pre>';
+    // print_r($resultats);
+    // echo '</pre>';
+    foreach ($resultats as $key =>$resultat) 
+    {
+        echo'<tr><td>'.$resultat["MedailleRecu"].'</td>';
+
+        echo'<td><img style = "max-height: 50px;" src ="Flags/'.$resultat['PaysRecu'].'"/></td>';
+        echo'<td><img style = "max-height: 50px;" src ="avatars/'.$resultat['avatar'].'"/></td>';
+
+        echo'<td>'.$resultat['NomRecu'].'</td>';
+        echo'<td>'.$resultat['PrenomRecu'].'</td></tr>';
+        //echo $resultat.'<br/>';
+
+
+            }
+        echo '</tbody></table>';
    
        
        
