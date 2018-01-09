@@ -58,12 +58,11 @@ $resultat = $uncontroleur->selectAll();
  </div>
 
  <section class="bg-primary text-white mb-0" id="about">
-  <div class="container" style="padding-top: 50px;">
+  <div class="container">
 
 
-    <h2 class="text-center text-uppercase text-white" style="font-size: 30px;">évènements</h2>
-    <hr class="star-light mb-5">
-
+    <h2 class="text-center text-uppercase text-white" style="font-size: 20px;">Athlètes</h2>
+    <hr class="star-light">
     <div class="row">
       <div class="col-md-3 sideNav">
         <ul class="nav nav-pills nav-stacked ulSideNav" id="buttons" style="display: block;">

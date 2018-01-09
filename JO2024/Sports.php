@@ -20,8 +20,8 @@ $resultat = $uncontroleur->selectAll();
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Evenements</title>
-
+  <title>Sports</title>
+    
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <style type="text/css">
@@ -58,10 +58,10 @@ $resultat = $uncontroleur->selectAll();
  </div>
 
  <section class="bg-primary text-white mb-0" id="about">
-  <div class="container" style="padding-top: 50px;">
+  <div class="container">
 
 
-    <h2 class="text-center text-uppercase text-white" style="font-size: 30px;">évènements</h2>
+    <h2 class="text-center text-uppercase text-white" style="font-size: 20px;">Sports</h2>
     <hr class="star-light mb-5">
 
     <div class="row">

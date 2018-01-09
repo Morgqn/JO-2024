@@ -51,8 +51,8 @@ $uncontroleur = new Controller("localhost","JObdd","root","root");
 
 
      <section class="bg-primary text-white mb-0" id="about">
-      <div class="container" style="padding-top: 50px;">
-        <h2 class="text-center text-uppercase text-white">Résultats</h2>
+      <div class="container">
+        <h2 class="text-center text-uppercase text-white" style="font-size : 20px;">Résultats</h2>
         <hr class="star-light mb-5">
          <div class="row">
       <div class="col-md-3">
