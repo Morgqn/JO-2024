@@ -7,19 +7,14 @@ $uncontroleur->setTable("Evenement");
 $resultat = $uncontroleur->selectAll2();
 ?>
 
-
-
-
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <link rel="shortcut icon" href="img/LogoJO.png" type="image/x-icon"/>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
   <title>Evenements</title>
 
   <!-- Bootstrap core CSS -->
@@ -89,7 +84,6 @@ $resultat = $uncontroleur->selectAll2();
 </div>
 </section>
 <?php include("Pages/footer.php"); ?>
-
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
 <div class="scroll-to-top d-lg-none position-fixed ">
   <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
@@ -115,7 +109,5 @@ $resultat = $uncontroleur->selectAll2();
 <?php 
 include("Pages/form.php");
 ?>
-
 </body>
-
 </html>

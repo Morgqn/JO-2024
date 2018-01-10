@@ -1,16 +1,10 @@
 <!--script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-
-
 </script-->
 <link href="style.css/Inscription.css" rel="stylesheet">
 <link rel="stylesheet" href="css/popupmodal.css" >
 <script src="JS_JO/popupmodal-min.js"></script>
-
 <link rel="stylesheet" type="text/css" href="style.css/backtotop.css">
 <script src="buttonToTop.js"></script>
-
-
-
 <form class="modal multi-step" id="demo-modal-3" method="POST" action="index.php" enctype="multipart/form-data">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -37,16 +31,12 @@
             </div>
             <center>
                 <div class="modal-body step-1" data-step="1">
-
-
-
-                    <p> <img src="img/tooltip1.png" data-toggle="tooltip" title="First name must be between 2-25 char!" height=30 style="right: 26px;
+                 <p> <img src="img/tooltip1.png" data-toggle="tooltip" title="First name must be between 2-25 char!" height=30 style="right: 26px;
                     position: absolute;
                     top: 40px;"></img>
                         <img src="img/tooltip1.png" data-toggle="tooltip" title="Last name must be between 2-25 char!" height=30 style="right: 26px;
                     position: absolute;
                     top: 137px;"></img>
-
                         <input class="fInput" placeholder="First name..." id="surname" name="firstName" onblur="formatSurname(this)"> </p>
                     <p><input class="fInput" placeholder="Last name..." id="name" name="lastName" onblur="formatName(this)"></p>
                     <p>

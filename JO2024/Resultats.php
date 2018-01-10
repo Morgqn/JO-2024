@@ -9,8 +9,8 @@ $uncontroleur = new Controller("localhost","JObdd","root","root");
     <html lang="fr">
 
     <head>
-        <link rel="shortcut icon" href="img/LogoJO.png" type="image/x-icon" />
         <meta charset="utf-8">
+        <link rel="shortcut icon" href="img/LogoJO.png" type="image/x-icon" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">

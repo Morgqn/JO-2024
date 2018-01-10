@@ -26,12 +26,9 @@ if(isset($_POST['inscription']))
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<link rel="icon" href="../boostrap/favicon.ico">
-
 	<title>SNCF</title>
-
 	<!-- Bootstrap core CSS -->
 	<link href="../../bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
 	<!-- Custom styles for this template -->
 	<link href="../../bootstrap/caroussel.css" rel="stylesheet">
 	<link href="../../font-awesome/css/font-awesome.min.css" rel="stylesheet">

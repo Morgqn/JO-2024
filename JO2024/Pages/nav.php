@@ -2,7 +2,6 @@
 <!-- Navigation -->
 <?php
  include("Pages/socialMediaSideBar.php");
-
 if (isset($_POST['logout']))
 {
   $uncontroleur = new Controller("localhost","JObdd","root","root");
@@ -60,12 +59,9 @@ if (isset($_POST['logout']))
             <div name="log " class="form-group">
             <button type="submit" name="seConnecter" class="btn btn-primary btn-block" >Se connecter</button>
             </div>
-            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#demo-modal-3">Inscription</button>
-            
-            
+            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#demo-modal-3">Inscription</button>           
             </form>
-            </div>
-            
+            </div>          
             </li>
             </ul>
             </li>';
@@ -85,14 +81,12 @@ if (isset($_POST['logout']))
             <div class="col-xs-12">
             <center><div class="col-xs-8"><span>Bonjour '.$_SESSION['first_name'].' ! </span></div></center>';
             echo'<div class="col-xs-4"><img class=\"avatar\" style="max-height: 110px;
-            margin: 13px auto;border: dashed 4px #2D3E4F; ;display: block;" src='.$url.'></div></div>';
-            
+            margin: 13px auto;border: dashed 4px #2D3E4F; ;display: block;" src='.$url.'></div></div>';           
             echo'<center><input class="btn btn-info" type="submit" name="logout" value="Déconnexion" style="margin-bottom: 1vw;"></center>
             </div>
             </div>
             </form>
-            </div>
-            
+            </div>           
             </li>
             </ul>
             </li>';

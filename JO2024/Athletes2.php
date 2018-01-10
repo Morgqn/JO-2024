@@ -6,10 +6,6 @@ $uncontroleur = new Controller("localhost","JObdd","root","root");
 $uncontroleur->setTable("Sportif");
 $resultat = $uncontroleur->selectAll();
 ?>
-
-
-
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -59,33 +55,25 @@ $resultat = $uncontroleur->selectAll();
 
  <section class="bg-primary text-white mb-0" id="about">
   <div class="container">
-
-
     <h2 class="text-center text-uppercase text-white" style="font-size: 20px;">Athlètes</h2>
     <hr class="star-light">
     <div class="row">
       <div class="col-md-3 sideNav">
         <ul class="nav nav-pills nav-stacked ulSideNav" id="buttons" style="display: block;">
           <?php
-
           foreach ($resultat as $unResultat) {
           //var_dump($unResultat);
           $uncontroleur->setTable("Personne");
-
           $tab = array("ID_PERSONNE"=>$unResultat['ID_PERSONNE']);
-         $personne = $uncontroleur->selectwhere($tab);
-
+          $personne = $uncontroleur->selectwhere($tab);
             echo '<li ><a href="vueAthletes.php?id='.$unResultat['ID_SPORTIF'].'" target="myframe">'.$personne['NOM'].' '.$personne['PRENOM'].'</a></li>';
           }
           ?>
         </ul>
       </div>
       <div class="col-md-9 well">
-
-         <iframe width="850" height="668" name="myframe" frameborder="yes">
-           
-         </iframe>
-         
+         <iframe width="850" height="668" name="myframe" frameborder="yes">    
+         </iframe>         
       </div>
     </div>
 
@@ -93,33 +81,26 @@ $resultat = $uncontroleur->selectAll();
 </div>
 </section>
 <?php include("Pages/footer.php"); ?>
-
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
 <div class="scroll-to-top d-lg-none position-fixed ">
   <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
     <i class="fa fa-chevron-up"></i>
   </a>
 </div>
-
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 <!-- Plugin JavaScript -->
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
 <!-- Contact Form JavaScript -->
 <script src="js/jqBootstrapValidation.js"></script>
 <script src="js/contact_me.js"></script>
-
 <!-- Custom scripts for this template -->
 <script src="js/freelancer.min.js"></script>
 <!-- Modal -->
 <?php 
 include("Pages/form.php");
 ?>
-
 </body>
-
 </html>
