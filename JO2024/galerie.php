@@ -34,7 +34,7 @@ session_start();
     <?php include("Pages/nav.php") ?>
     <section class="portfolio" id="portfolio">
         <div class="container" style="padding-top: 50px;">
-            <h2 class="text-center text-uppercase text-secondary mb-0">Galerie</h2>
+            <h2 class="text-center text-uppercase text-secondary mb-0" style="font-size :25px">Galerie</h2>
             <hr class="star-dark mb-5">
             <div class="row">
                 <div class="col-md-6 col-lg-4">
