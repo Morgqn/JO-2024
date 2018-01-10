@@ -16,8 +16,8 @@ th {
 }
 
 th {
-    background: #DFDFDF;
-    /* Darken header a bit */
+    background: #2D3E4F;
+    color: white;
     font-weight: bold;
     font-size: 32px;
     padding: 20px;
