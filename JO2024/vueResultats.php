@@ -8,7 +8,7 @@
     //$resultat = $uncontroleur->selectAll2(); 
     $tab = array("ID_SPORT"=>$_GET['id']);
     $uncontroleur->setTable("resultat");
-    $resultats[] = $uncontroleur->selectwhere($tab);
+    $resultats = $uncontroleur->selectwhereall($tab);
 
 
     echo '<center><table border=1>

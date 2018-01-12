@@ -188,6 +188,33 @@
 				return null;
 			}
 		}
+        public function selectwhereall($tab)
+		{
+			$donnees = array();
+			$clause = array();
+			foreach($tab as $cle =>$valeur)
+			{
+				$donnees[":".$cle] = $valeur;
+				$clause[] = $cle." = :".$cle;
+
+			}
+			$chaineclause = implode(" and ", $clause);
+
+
+			$requete = "select * from ".$this->table." where ".$chaineclause.";";
+			
+			if($this->pdo != null)
+			{
+				$selectWhere = $this->pdo->prepare($requete);
+				$selectWhere->execute($donnees);
+				$resultats = $selectWhere->fetchAll();
+				return $resultats;
+			}
+			else
+			{
+				return null;
+			}
+		}
 		public function logout()
 		{
 			session_unset ();

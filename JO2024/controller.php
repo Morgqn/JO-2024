@@ -47,6 +47,10 @@
 	{
 		 return $this->unModele->selectwhere($tab);
 	}
+        public function selectwhereall($tab)
+	{
+		 return $this->unModele->selectwhereall($tab);
+	}
 		public function selectFlag()
 		{
 			$select = $this->unModele->selectFlag();

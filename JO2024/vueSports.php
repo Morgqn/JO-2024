@@ -64,7 +64,6 @@
         ';
 
 
-      
     ?>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
