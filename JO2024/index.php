@@ -101,10 +101,10 @@ if(isset($_POST['inscription']))
                     <hr class="star-light mb-5">
                     <div class="row">
                         <div class="col-lg-4 ml-auto">
-                            <p class="lead">Lorem ipsum dolor sit amet, sed natum qualisque ea, nisl suas instructior ei mea, an mel feugait tibique. Modus inciderint dissentiunt vel id, in scripta constituto contentiones vim, sit nibh petentium no.</p>
+                            <?php include 'Flux.php'; ?>
                         </div>
                         <div class="col-lg-4 mr-auto">
-                            <p class="lead">An aperiam suscipit salutandi pri. No mollis aliquando mea, magna posse reprimique mel no. At labitur percipitur persequeris per, pro cu mutat torquatos. Ut altera sensibus vituperata mel. Duo error numquam te, est et essent nonumes pericula.</p>
+                            <?php include 'Flux2.php'; ?>
                         </div>
                     </div>
                 </div>
