@@ -30,18 +30,13 @@ if(isset($_POST['inscription']))
         <meta name="description" content="">
         <meta name="author" content="">
         <title>Accueil</title>
-        <!-- Bootstrap core CSS -->
-        <link href='style.css/FluxRSS.css' rel='stylesheet' type='text/css'>
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <!-- Custom fonts for this template -->
         <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-        <!-- Plugin CSS -->
         <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-        <!-- Custom styles for this template -->
         <link href="css/freelancer.min.css" rel="stylesheet">
         <link href="style.css/header.css" rel="stylesheet">
 
@@ -111,20 +106,7 @@ if(isset($_POST['inscription']))
                 </div>
             </section>
             <!-- Contact Section -->
-            <section id="alaune">
-                <div class="container">
-                    <h2 class="text-center text-uppercase text-secondary mb-0">À LA UNE</h2>
-                    <hr class="star-dark mb-5">
-                    <div class="row">
-                        <div class="col-lg-4 ml-auto">
-                            <p class="lead">Lorem ipsum dolor sit amet, sed natum qualisque ea, nisl suas instructior ei mea, an mel feugait tibique. Modus inciderint dissentiunt vel id, in scripta constituto contentiones vim, sit nibh petentium no.</p>
-                        </div>
-                        <div class="col-lg-4 mr-auto">
-                            <p class="lead">An aperiam suscipit salutandi pri. No mollis aliquando mea, magna posse reprimique mel no. At labitur percipitur persequeris per, pro cu mutat torquatos. Ut altera sensibus vituperata mel. Duo error numquam te, est et essent nonumes pericula.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
             <?php include("Pages/footer.php");?>
             <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
             <div class="scroll-to-top d-lg-none position-fixed ">
