@@ -31,6 +31,7 @@ if(isset($_POST['inscription']))
         <meta name="author" content="">
         <title>Accueil</title>
         <!-- Bootstrap core CSS -->
+        <link href='style.css/FluxRSS.css' rel='stylesheet' type='text/css'>
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
