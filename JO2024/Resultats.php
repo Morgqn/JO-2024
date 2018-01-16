@@ -76,7 +76,7 @@ $uncontroleur = new Controller("localhost","JObdd","root","root");
                     </div>
                     <div class="col-md-9 well">
 
-                        <iframe width="910" height="237" name="myframe" frameborder="yes">
+                        <iframe width="910" height="910" name="myframe" frameborder="yes">
            
          </iframe>
 

@@ -12,7 +12,7 @@ foreach ($rss->channel->item as $item){
 
     echo"
  
-         <img height='220px' width='400px' src='$image' alt='Card image'>      
+         <img height='215px' width='350px' src='$image' alt='Card image'>      
    ";
 }
 ?>
