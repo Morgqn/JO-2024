@@ -13,7 +13,7 @@ foreach ($rss->channel->item as $item){
  echo"
  <center>
  <a href='$linkk'><h4>$itemm</h4></a>
- <p class='lead' ><center>$description</center></p>
+ <p class='lead'><center style='color: chocolate !important;'>$description</center></p>
  </center>";
 }
 ?>

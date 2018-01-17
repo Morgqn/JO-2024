@@ -91,17 +91,22 @@ if(isset($_POST['inscription']))
             </div>
             <!-- Portfolio Grid Section -->
             <!-- About Section -->
-            <section class="bg-primary text-white mb-0" id="about">
+            <section class="bg-primary text-white mb-0" id="about" style="background-color: #fff!important;">
                 <div class="container">
-                    <h2 class="text-center text-uppercase text-white">DERNIÈRES ACTUALITÉS</h2>
-                    <hr class="star-light mb-5">
+                    <h2 class="text-center text-uppercase text-white" style="color: #f4854e !important;">DERNIÈRES ACTUALITÉS</h2>
+                    <br>
+                    <br>
                     <div class="row">
-                        <div class="col-lg-4 ml-auto">
+                        <div class="col-lg-2" style="background: url(Background.jpg);background-size: contain;margin-bottom: 26px;" ></div>
+                        <div class="col-lg-4 ">
                             <?php include 'Flux.php'; ?>
                         </div>
-                        <div class="col-lg-4 mr-auto">
+                        <div class="col-lg-4 ">
                             <?php include 'Flux2.php'; ?>
                         </div>
+                        <div class="col-lg-2" style="background: url(Background.jpg);background-size: contain;margin-bottom: 26px;" ></div>
+                        
+                        
                     </div>
                 </div>
             </section>
