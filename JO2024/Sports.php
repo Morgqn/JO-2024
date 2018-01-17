@@ -56,13 +56,13 @@ $resultat = $uncontroleur->selectAll();
         
           foreach ($resultat as $unResultat) {
 
-            echo '<li ><a href="vueSports.php?id='.$unResultat['ID_SPORT'].'" target="myframe">'.$unResultat['LIBELLE'].'</a></li>';
+            echo '<li ><a href="vueSport.php?id='.$unResultat['ID_SPORT'].'" target="myframe">'.$unResultat['LIBELLE'].'</a></li>';
           }
           ?>
         </ul>
       </div>
       <div class="col-md-9 well">
-          <iframe width="800" height="768" name="myframe" frameborder="yes" srcdoc="<h1> Jeux olympiques</h1>Les Jeux olympiques d'été de 2012 (Jeux de la XXXe Olympiade de l'ère moderne) ont lieu du 27 juillet1 au 12 août 20122 à Londres. La capitale britannique est la première ville à accueillir les Jeux olympiques modernes pour la troisième fois3,4, après ceux de 1908 et de 19485,6.
+          <div width="800" height="768" name="myframe" frameborder="yes" srcdoc="<h1> Jeux olympiques</h1>Les Jeux olympiques d'été de 2012 (Jeux de la XXXe Olympiade de l'ère moderne) ont lieu du 27 juillet1 au 12 août 20122 à Londres. La capitale britannique est la première ville à accueillir les Jeux olympiques modernes pour la troisième fois3,4, après ceux de 1908 et de 19485,6.
 
 La ville de Londres a été élue parmi cinq villes candidates lors de la 117e session du Comité international olympique (CIO), le 6 juillet 2005 à Singapour. Sebastian Coe est le chef du comité de candidature puis le président du Comité organisant les Jeux olympiques et les Jeux paralympiques d'été de 2012.<br/>La ville de Londres a été élue parmi cinq villes candidates lors de la 117e session du Comité international olympique (CIO), le 6 juillet 2005 à Singapour. Sebastian Coe est le chef du comité de candidature puis le président du Comité organisant les Jeux olympiques et les Jeux paralympiques d'été de 2012. <br/>Les Jeux olympiques d'été de 2012 (Jeux de la XXXe Olympiade de l'ère moderne) ont lieu du 27 juillet1 au 12 août 20122 à Londres. La capitale britannique est la première ville à accueillir les Jeux olympiques modernes pour la troisième fois3,4, après ceux de 1908 et de 19485,6.
 
@@ -70,7 +70,7 @@ La ville de Londres a été élue parmi cinq villes candidates lors de la 117e s
 
 La ville de Londres a été élue parmi cinq villes candidates lors de la 117e session du Comité international olympique (CIO), le 6 juillet 2005 à Singapour. Sebastian Coe est le chef du comité de candidature puis le président du Comité organisant les Jeux olympiques et les Jeux paralympiques d'été de 2012.<br/>La ville de Londres a été élue parmi cinq villes candidates lors de la 117e session du Comité international olympique (CIO), le 6 juillet 2005 à Singapour. Sebastian Coe est le chef du comité de candidature puis le président du Comité organisant les Jeux olympiques et les Jeux paralympiques d'été de 2012.   ">
             
-         </iframe>       
+         </div>       
       </div>
         
         
