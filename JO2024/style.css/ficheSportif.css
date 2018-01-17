@@ -4,7 +4,7 @@
 }
 
 .hasMarginTop {
-    margin: 150px 0 0 0;
+    margin: 65px 0 0 0;
 }
 
 .resetPadding {
@@ -84,7 +84,7 @@
 }
 
 .vignette-desktop {
-    top: 200px;
+    top: 170px;
     position: absolute;
     left: 60px;
 }
@@ -163,7 +163,7 @@
     text-align: center;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1184px) {
     #vignette {
         display: none !important;
     }
