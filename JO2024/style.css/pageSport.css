@@ -1,0 +1,129 @@
+.banner-box {
+    background: #333;
+    text-align: center;
+    margin: 0 0 60px;
+    position: relative;
+}
+
+.nav-sports {
+    background-color: #ed1941!important;
+}
+
+.banner-box .holder {
+    max-width: 1090px;
+    padding: 61px 15px 22px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner-box .h1H {
+    font: 2em/1.036em Trade-Gothic-W-Cond-Bold, Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 0 33px;
+}
+
+.game-results-box.alt {
+    padding: 70px 0 0;
+    margin-top: 190px;
+}
+
+.game-results-box .countries {
+    margin-bottom: 40px;
+    padding-top: 40px;
+}
+
+.countries {
+    overflow: hidden;
+    font-size: 1.143em;
+    line-height: 1.125em;
+    font-weight: 700;
+    margin-top: 80px;
+    list-style-type: none;
+}
+
+.game-results-box .countries .box {
+    margin: 0 0 45px;
+}
+
+.countries .box {
+    float: left;
+    text-align: center;
+    margin: 0 0 30px;
+    width: 16.66%;
+    min-height: 120px;
+    padding: 0 18px;
+}
+
+.countries .box>a {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.countries a {
+    text-decoration: none;
+    color: #bababa;
+    font: 15px/18px Trade-Gothic-W-Cond-Bold, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.countries a:hover {
+    color: gold !important;
+}
+
+.game-results-box .countries .flag-box {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 0 15px;
+    background: 0 0;
+}
+
+.sports90 {
+    background-position: 0 -2500px;
+    border: 3.3px solid black;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.sports90:hover {
+    border-color: grey;
+    border-radius: 50% !important;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.heading {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    margin: 0 0 55px;
+}
+
+.heading h2 {
+    float: left;
+    color: #333;
+    text-transform: uppercase;
+    margin: 0;
+    font: 2em/1.071em Trade-Gothic-W-Cond-Bold, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.heading.center h2 {
+    float: none;
+    text-align: center;
+}
+
+.sportHr {
+    width: 50% !important;
+}
+
+
+/* HOVER EFFECT */
