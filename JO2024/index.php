@@ -93,16 +93,13 @@ if(isset($_POST['inscription']))
             <!-- About Section -->
             <section class="bg-primary text-white mb-0" id="about" style="background-color: #fff!important;">
                 <div class="container">
-                    <h2 class="text-center text-uppercase text-white" style="color: #f4854e !important;">DERNIÈRES ACTUALITÉS</h2>
+                    <h2 class="text-center text-uppercase text-white" style="color: #0249a1f5 !important;">DERNIÈRES ACTUALITÉS</h2>
                     <br>
                     <br>
                     <div class="row">
                         <div class="col-lg-2" style="background: url(Background.jpg);background-size: contain;margin-bottom: 26px;" ></div>
-                        <div class="col-lg-4 ">
+                        <div class="col-lg-8">
                             <?php include 'Flux.php'; ?>
-                        </div>
-                        <div class="col-lg-4 ">
-                            <?php include 'Flux2.php'; ?>
                         </div>
                         <div class="col-lg-2" style="background: url(Background.jpg);background-size: contain;margin-bottom: 26px;" ></div>
                         
