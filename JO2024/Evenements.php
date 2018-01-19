@@ -42,46 +42,90 @@ $resultat = $uncontroleur->selectAll2();
 <link href="css/freelancer.min.css" rel="stylesheet">
 
 </head>
-
 <body id="page-top">
-
  <?php include("Pages/nav.php") ?>
-
-
- <!-- Header -->
- <div class="container">
- </div>
-
- <section class="bg-primary text-white mb-0" id="about">
+ <section class="bg-primary text-white mb-0" id="about" style="background-color: #222222d6!important;">
+     <h2 class="text-center text-uppercase text-white" style="font-size: 20px;">Liste des évènements</h2>
   <div class="container">
-
-
-    <h2 class="text-center text-uppercase text-white" style="font-size: 20px;">évènements</h2>
-    <hr class="star-light mb-5">
-
+    <hr>
+      <br>
     <div class="row">
-      <div class="col-md-3 sideNav">
-        <ul class="nav nav-pills nav-stacked ulSideNav" id="buttons" style="display: block;">
-          <?php
+   <div class="col">
+       <center>
+        <a href="/photos/olympic-day">
+        <picture class="img">
+            <img srcset="https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|340:340&amp;crop=340:340;*,*, https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|680:680&amp;crop=680:680;*,* 2x" alt=""></picture>
+            </a>
+           <br>
+           <br>
+            <h3 style="font-size:25px;"><a href="/photos/olympic-day"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Journée olympique</font></font></a></h3>
+        </center>
+            <br>
+        </div>
+    <div class="col"><center>
+        <a href="/photos/olympic-day">
+        <picture class="img">
+            <img srcset="https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|340:340&amp;crop=340:340;*,*, https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|680:680&amp;crop=680:680;*,* 2x" alt=""></picture>
+            </a>
+           <br>
+           <br>
+            <h3 style="font-size:25px;"><a href="/photos/olympic-day"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Journée olympique</font></font></a></h3>
+        </center>
+            <br>
+        </div>
+    <div class="w-100"></div>
+        <br>
+    <div class="col"><center>
+        <a href="/photos/olympic-day">
+        <picture class="img">
+            <img srcset="https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|340:340&amp;crop=340:340;*,*, https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|680:680&amp;crop=680:680;*,* 2x" alt=""></picture>
+            </a>
+           <br>
+           <br>
+            <h3 style="font-size:25px;"><a href="/photos/olympic-day"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Journée olympique</font></font></a></h3>
+        </center>
+            <br>
+        </div>
+        <div class="col"><center>
+        <a href="/photos/olympic-day">
+        <picture class="img">
+            <img srcset="https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|340:340&amp;crop=340:340;*,*, https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|680:680&amp;crop=680:680;*,* 2x" alt=""></picture>
+            </a>
+           <br>
+           <br>
+            <h3 style="font-size:25px;"><a href="/photos/olympic-day"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Journée olympique</font></font></a></h3>
+        </center>
+            <br>
+        </div>
+ <div class="w-100"></div>
+        <br>
+        <div class="col"><center>
+        <a href="/photos/olympic-day">
+        <picture class="img">
+            <img srcset="https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|340:340&amp;crop=340:340;*,*, https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|680:680&amp;crop=680:680;*,* 2x" alt=""></picture>
+            </a>
+           <br>
+           <br>
+            <h3 style="font-size:25px;"><a href="/photos/olympic-day"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Journée olympique</font></font></a></h3>
+        </center>
+            <br>
+        
+        </div>
+        <div class="col"><center>
+        <a href="/photos/olympic-day">
+        <picture class="img">
+            <img srcset="https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|340:340&amp;crop=340:340;*,*, https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|680:680&amp;crop=680:680;*,* 2x" alt=""></picture>
+            </a>
+           <br>
+           <br>
+            <h3 style="font-size:25px;"><a href="/photos/olympic-day"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Journée olympique</font></font></a></h3>
+        </center>
+            <br>
+        </div>
+        <div class="w-100"></div>    
+        </div>
 
-          foreach ($resultat as $unResultat) {
-
-            echo '<li ><a href="vueEvenements.php?id='.$unResultat['ID_EVENEMENT'].'" target="myframe">'.$unResultat['LIBELLE_EVENEMENT'].'</a></li>';
-          }
-          ?>
-        </ul>
-      </div>
-      <div class="col-md-9 well">
-
-         <iframe width="800" height="768" name="myframe" frameborder="yes">
-           
-         </iframe>
-         
-      </div>
-    </div>
-
-  </div>
-</div>
+        </div>
 </section>
 <?php include("Pages/footer.php"); ?>
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
