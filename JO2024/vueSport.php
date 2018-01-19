@@ -44,8 +44,8 @@
 <body>
     <div class="container-fluid resetPadding hasMarginTop">
         <div class="row">
-            <div class="col-md-12 crop resetPadding">
-                <img class="hasRedBorder" src="IMG_SPORTS/Table-Tennis-banner.jpg">
+            <div class="col-lg-12 resetPadding">
+                <img class="imageCrop" src="IMG_SPORTS/Table-Tennis-banner.jpg">
             </div>
         </div>
     </div>
@@ -55,47 +55,54 @@
                 <source srcset="IMG_SPORTS/Ping.png" media="(min-width: 1024px)">
                 <source srcset="IMG_SPORTS/Ping.png" media="(min-width: 768px)">
                 <img class="isRadius minBorder resizeImg" src="IMG_SPORTS/Ping.png" alt="LIN Dan">
-                </span>
             </picture>
             <div class="text-box">
                 <h1 class="h1A">Ping Pong</h1>
             </div>
         </article>
-        <div class="row">
-        <div class="col-md-12 pSport">
-        <p>
-            Description du sport 
-        </p>
-</div>
+    </div>
+    <div class="row divPhone">
+        <div class="col-lg-12" style="background: grey; text-align: center;">
+        <img class="isRadius minBorder resizeImg radius" src="IMG_SPORTS/Ping.png" alt="LIN Dan">
+        <h1 class="h1A">Ping Pong</h1>
         </div>
-</div>
-        <!-- Footer And scripts section -->
+                
+    </div>
+    <div class="row">
+        <div class="col-md-12 pSport">
+            <p>
+                Description du sport
+            </p>
+        </div>
+    </div>
+    </div>
+    <!-- Footer And scripts section -->
 
-        <footer>
-            <?php include("Pages/footer.php");?>
-            <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-            <div class="scroll-to-top d-lg-none position-fixed ">
-                <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-                    <i class="fa fa-chevron-up"></i>
-                </a>
-            </div>
-            <!-- Bootstrap core JavaScript -->
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-            <!-- Plugin JavaScript -->
-            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-            <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-            <!-- Contact Form JavaScript -->
-            <script src="js/jqBootstrapValidation.js"></script>
-            <script src="js/contact_me.js"></script>
-            <!-- Custom scripts for this template -->
-            <script src="js/freelancer.min.js"></script>
-            <script src="JS_JO/coutdown.js"></script>
-            <!-- Modal -->
-            <?php 
+    <footer>
+        <?php include("Pages/footer.php");?>
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+        <div class="scroll-to-top d-lg-none position-fixed ">
+            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+        </div>
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <!-- Contact Form JavaScript -->
+        <script src="js/jqBootstrapValidation.js"></script>
+        <script src="js/contact_me.js"></script>
+        <!-- Custom scripts for this template -->
+        <script src="js/freelancer.min.js"></script>
+        <script src="JS_JO/coutdown.js"></script>
+        <!-- Modal -->
+        <?php 
 include("Pages/form.php");
 ?>
-        </footer>
+    </footer>
 </body>
 
 </html>
