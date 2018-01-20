@@ -86,6 +86,7 @@
             <p>
                 Description du sport
             </p>
+            <?php echo'<p>'.$resultat['DESCRIPTION'].'</p>';?>
         </div>
     </div>
     </div>
