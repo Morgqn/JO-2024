@@ -1,3 +1,34 @@
+<?php
+ session_start();
+    include("controller.php");
+        
+    $uncontroleur = new Controller("localhost","JObdd","root","root");
+    $uncontroleur->setTable("Sportif");
+    //$resultat = $uncontroleur->selectAll2(); 
+    $tab = array("ID_SPORTIF"=>$_GET['id']);
+    $sportif = $uncontroleur->selectwhere($tab);
+    $tab = array("ID_PERSONNE"=>$sportif['ID_PERSONNE']);
+    $uncontroleur->setTable("Personne");
+    $personne = $uncontroleur->selectwhere($tab);
+    $uncontroleur->setTable("Pays");
+    $tab = array("ID_PAYS"=>$sportif['ID_PAYS']);
+    $pays = $uncontroleur->selectwhere($tab);
+    $sportifImages = $sportif['AVATAR'];
+    $sportifImagesArray = explode('"', $sportifImages);
+    $sportifCover = $sportifImagesArray[0];
+    $sportifProfil = $sportifImagesArray[1];
+    $tab = array("ID_PERSONNE"=>$sportif['ID_PERSONNE']);
+    $uncontroleur->setTable("Pratiquer");
+    $pratique = $uncontroleur->selectwhere($tab);
+    $tab = array("ID_SPORT"=>$pratique['ID_SPORT']);
+    $uncontroleur->setTable("Sport");
+    $sport = $uncontroleur->selectwhere($tab);
+
+    //echo'<img style="max-height: 50px;" src="Flags/'.$pays['DRAPEAU'].'"></div>';
+
+?>
+
+
 <!DOCTYPE html>
 
 <html lang="fr">
@@ -45,23 +76,25 @@
     <div class="container-fluid resetPadding hasMarginTop">
         <div class="row">
             <div class="col-md-12 crop resetPadding">
-                <img class="hasRedBorder" src="testImageAthletes/Lin_Dan_banner.jpg">
+                <?php
+                echo '<img class="hasRedBorder" src="avatars/'.$sportifCover.'">';?>
             </div>
         </div>
     </div>
     <div class="row">
         <article id="vignette" class="vignette-desktop">
             <picture class="image">
-                <source srcset="testImageAthletes/Lin_Dan_mugshot.jpg" media="(min-width: 1024px)">
-                <source srcset="testImageAthletes/Lin_Dan_mugshot.jpg" media="(min-width: 768px)">
-                <img class="isRadius minBorder resizeImg" src="testImageAthletes/Lin_Dan_mugshot.jpg" alt="LIN Dan">
+                <?php 
+                echo '<source srcset="avatars/'.$sportifProfil.'" media="(min-width: 1024px)">
+                <source srcset="'.$sportifProfil.'" media="(min-width: 768px)">
+                <img class="isRadius minBorder resizeImg" src="avatars/'.$sportifProfil.'" alt="img">';?>
                 </span>
             </picture>
             <div class="text-box">
-                <h1 class="h1A">Lin DAN</h1>
+                <?php echo'<h1 class="h1A">'.$personne['NOM'].' '.$personne['PRENOM'].'</h1>'?>
                 <div class="profile-row hasPadding">
                     <div>
-                        <img class="flagRezise" src="testImageAthletes/china_flag.png">
+                        <?php echo '<img class="flagRezise" src="Flags/'.$pays['DRAPEAU'].'">';?>
                     </div>
                 </div>
             </div>
@@ -87,7 +120,7 @@
                 </span>
             </picture>
             <div class="text-box">
-                <h1 class="h1A">Lin DAN</h1>
+                <?php echo'<h1 class="h1A">'.$personne['NOM'].' '.$personne['PRENOM'].'</h1>'?>
                 <div class="profile-row hasPadding">
                     <div>
                         <img class="flagRezise" src="testImageAthletes/china_flag.png">
@@ -115,25 +148,34 @@
                         <li class="liA">
                             <div class="text-box">
                                 <strong class="title">Sport</strong>
-                                <a class="aA" href="/fr/badminton">Badminton</a>
+                                <?php
+                                echo '<a class="aA" href="/fr/badminton">'.$sport['LIBELLE'].'</a>';?>
                             </div>
                         </li>
                         <li class="liA">
                             <div class="text-box">
                                 <strong class="title">Pays</strong>
-                                <a class="aA" href="/fr/republique-populaire-de-chine">République Populaire de Chine</a>
+                               <?php  echo'<a class="aA" href="/fr/republique-populaire-de-chine">'
+                                    .$pays['LIBELLE'].
+                                '</a>'?>
                             </div>
                         </li>
                         <li class="liA">
                             <div class="text-box">
-                                <strong class="title">Naissance</strong>
-                                <a class="aA" href="">14 oct. 1983</a>
+                                <strong class="title">Age</strong>
+                               <?php echo '<a class="aA" href="">'.$personne['AGE'].'</a>';?>
                             </div>
                         </li>
                         <li class="liA">
                             <div class="text-box">
-                                <strong class="title">Participation aux Jeux</strong>
-                                <a class="aA" href="/fr/athenes-2004">2004</a>
+                                <strong class="title">Taille</strong>
+                                <?php echo '<a class="aA" href="/fr/athenes-2004">'.$sportif['TAILLE'].'</a>';?>
+                            </div>
+                        </li>
+                        <li class="liA">
+                            <div class="text-box">
+                                <strong class="title">Poids</strong>
+                                <?php echo '<a class="aA" href="/fr/athenes-2004">'.$sportif['POIDS'].'</a>';?>
                             </div>
                         </li>
                     </ul>
