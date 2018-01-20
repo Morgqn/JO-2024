@@ -37,14 +37,14 @@
 </head>
 <body id="page-top">
  <?php include("Pages/nav.php") ?>
- <section class="bg-primary text-white mb-0" id="about" style="background-color: #222222d6!important;">
+ <section class="bg-primary text-white mb-0" id="about" style="background-color:#ffffff!important;">
      <br>
-     <h2 class="text-center text-uppercase text-white" style="font-size: 25px;font-family: initial;">photos de "nom de l'évènement".</h2>
+     <h2 class="text-center text-uppercase text-white" style="font-size: 25px;font-family: initial;color:#333!important;">Photos</h2>
   <div class="container">
-    <hr style="border-top: 1px solid white;width: 50%">
+    <hr style="border-top: 1px solid gray;width: 50%">
       <br>
     <div class="row">
-        <div class="col">
+        <div class="col-xl-12">
             <?php
                     include("controller.php");
 
@@ -70,10 +70,10 @@
     
     
     
-        echo '<div style="margin-top: 20;" class="container col-md-4 well bodyIframe">Date : '.$resultat['DATE'].'</div><br>';
+        //echo '<div style="margin-top: 20;" class="container col-md-4 well bodyIframe">Date : '.$resultat['DATE'].'</div><br>';
    
         $date = $resultat['DATE'];
-        echo '<div class="bodyIframe container col-md-4 well ">Heure : '.$resultat['TIME'].'</div><br>';
+        //echo '<div class="bodyIframe container col-md-4 well ">Heure : '.$resultat['TIME'].'</div><br>';
         
         $_SESSION['ID_EVENEMENT_RECIEVED'] = $resultat['ID_EVENEMENT'];
         $uncontroleur->setTable("Lieu");

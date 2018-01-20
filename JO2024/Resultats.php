@@ -1,6 +1,5 @@
 <?php
 session_start();
-var_dump($_SESSION);
 include("controller.php");
 $uncontroleur = new Controller("localhost","JObdd","root","root");
 
