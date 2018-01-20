@@ -36,6 +36,7 @@
 <body id="page-top">
  <?php include("Pages/nav.php") ?>
  <section class="bg-primary text-white mb-0" id="about" style="background-color: #222222d6!important;">
+     <br>
      <h2 class="text-center text-uppercase text-white" style="font-size: 28px;">photos de "nom de l'evenement".</h2>
   <div class="container">
     <hr>
@@ -43,8 +44,8 @@
     <div class="row">
         <div class="col">
             <?php
- session_start();
-    include("controller.php");
+                session_start();
+                    include("controller.php");
 
     
            if ((isset($_SESSION['is_connected']) && $_SESSION['is_connected'] == true))
@@ -104,10 +105,10 @@
         
         
         </div>
-        <div class="col">Column</div>
+        <div class="col"></div>
         <div class="w-100"></div>
-        <div class="col">Column</div>
-        <div class="col">Column</div>
+        <div class="col"></div>
+        <div class="col"></div>
       
         </div>
 
