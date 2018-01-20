@@ -1,3 +1,16 @@
+<?php
+ include("controller.php");
+   $uncontroleur = new Controller("localhost","JObdd","root","root");
+    $uncontroleur->setTable("Sport");
+    //$resultat = $uncontroleur->selectAll2(); 
+    $tab = array("ID_SPORT"=>$_GET['id']);
+    $resultat = $uncontroleur->selectwhere($tab);
+     $avatars = $resultat['IMG'];
+            $sportifImagesArray = explode('"',$avatars);
+            $sportCover = $sportifImagesArray[1];
+            $sportProfil = $sportifImagesArray[0];
+?>
+
 <!DOCTYPE html>
 
 <html lang="fr">
@@ -42,29 +55,29 @@
 <!-- End of header section -->
 
 <body>
-    <div class="container-fluid resetPadding hasMarginTop">
+    <div class="container-fluid resetPadding " style="margin: 103px 0 0 0;">
         <div class="row">
             <div class="col-lg-12 resetPadding">
-                <img class="imageCrop" src="IMG_SPORTS/Table-Tennis-banner.jpg">
+              <?php  echo'<img class="imageCrop" src="IMG_SPORTS/'.$sportCover.'">';?>
             </div>
         </div>
     </div>
     <div class="row divP">
         <article id="vignette" class="vignette-desktop">
             <picture class="image">
-                <source srcset="IMG_SPORTS/Ping.png" media="(min-width: 1024px)">
-                <source srcset="IMG_SPORTS/Ping.png" media="(min-width: 768px)">
+                <?php echo'<source srcset="IMG_SPORTS/'.$sportProfil.'" media="(min-width: 1024px)">
+                <source srcset="IMG_SPORTS/'.$sportProfil.'" media="(min-width: 768px)">
                 <img class="isRadius minBorder resizeImg" src="IMG_SPORTS/Ping.png" alt="LIN Dan">
             </picture>
             <div class="text-box">
-                <h1 class="h1A">Ping Pong</h1>
+              <h1 class="h1A">'.$resultat['LIBELLE'].'</h1>' ?>
             </div>
         </article>
     </div>
     <div class="row divPhone">
         <div class="col-lg-12" style="background: grey; text-align: center;">
-        <img class="isRadius minBorder resizeImg radius" src="IMG_SPORTS/Ping.png" alt="LIN Dan">
-        <h1 class="h1A">Ping Pong</h1>
+        <?php echo '<img class="isRadius minBorder resizeImg radius" src="IMG_SPORTS/'.$resultat['IMG'].'" alt="LIN Dan">
+        <h1 class="h1A">'.$resultat['LIBELLE'].'</h1>';?>
         </div>
                 
     </div>

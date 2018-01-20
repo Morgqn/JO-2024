@@ -1,3 +1,11 @@
+ <?php
+  include("controller.php");
+ var_dump("sdfsf");
+
+  $uncontroleur = new Controller("localhost","JObdd","root","root");
+  $uncontroleur->setTable("Sport");
+  $resultat = $uncontroleur->selectAll();
+  ?>
 <!DOCTYPE html>
 
 <html lang="fr">
@@ -42,223 +50,25 @@
 
 <div class="main">
   <div class="main-holder">
-    <section id="summer-sports" class="game-results-box alt">
-      <div class="heading center">
+    <section id="summer-sports" class="game-results-box alt" style="margin-top: 70px!important;">
+      <div class="heading center" style="margin-top: 0;">
         <h2>Liste des sports</h2>
       </div>
       <hr class="sportHr">
       <div class="select-box">
         <ul class="countries">
-          <li class="box same-height-left" style="height: 129px;">
-            <a href="/fr/athletisme">
+           <?php
+                foreach ($resultat as $unResultat)
+            {
+          echo '<li class="box same-height-left" style="height: 129px;">
+            <a href="vueSport.php?id='.$unResultat['ID_SPORT'].'">
               <div class="flag-box">
-                <img src="IMG_SPORTS/Aviron.png" class="sports90 at" height="96px">
-                <span class="mask"></span>
-              </div>
 
-              Aviron
-            </a>
-          </li>
-          <li class="box same-height-left" style="height: 129px;">
-            <a href="/fr/athletisme">
-              <div class="flag-box">
-                <img src="IMG_SPORTS/Aviron.png" class="sports90 at" height="96px">
+                <img src="IMG_SPORTS/'.$unResultat['IMG'].'" class="sports90 at" height="96px">
                 <span class="mask"></span>
-              </div>
-
-              Aviron
+              </div>'.$unResultat['LIBELLE'].'
             </a>
-          </li>
-          <li class="box same-height-left" style="height: 129px;">
-            <a href="/fr/athletisme">
-              <div class="flag-box">
-                <img src="IMG_SPORTS/Boxe.png" class="sports90 at" height="96px">
-                <span class="mask"></span>
-              </div>
-
-              Boxe
-            </a>
-          </li>
-          <li class="box same-height-left" style="height: 129px;">
-            <a href="/fr/athletisme">
-              <div class="flag-box">
-                <img src="IMG_SPORTS/Aviron.png" class="sports90 at" height="96px">
-                <span class="mask"></span>
-              </div>
-
-              Aviron
-            </a>
-          </li>
-          <li class="box same-height-left" style="height: 129px;">
-            <a href="/fr/athletisme">
-              <div class="flag-box">
-                <img src="IMG_SPORTS/Aviron.png" class="sports90 at" height="96px">
-                <span class="mask"></span>
-              </div>
-
-              Aviron
-            </a>
-          </li>
-          <li class="box same-height-left" style="height: 129px;">
-            <a href="/fr/athletisme">
-              <div class="flag-box">
-                <img src="IMG_SPORTS/Aviron.png" class="sports90 at" height="96px">
-                <span class="mask"></span>
-              </div>
-
-              Aviron
-            </a>
-          </li>
-          <li class="box same-height-left" style="height: 129px;">
-            <a href="/fr/athletisme">
-              <div class="flag-box">
-                <img src="IMG_SPORTS/Aviron.png" class="sports90 at" height="96px">
-                <span class="mask"></span>
-              </div>
-
-              Aviron
-            </a>
-          </li>
-          <li class="box same-height-left" style="height: 129px;">
-            <a href="/fr/athletisme">
-              <div class="flag-box">
-                <img src="IMG_SPORTS/Aviron.png" class="sports90 at" height="96px">
-                <span class="mask"></span>
-              </div>
-
-              Aviron
-            </a>
-          </li>
-          <li class="box same-height-left" style="height: 129px;">
-            <a href="/fr/athletisme">
-              <div class="flag-box">
-                <img src="IMG_SPORTS/Aviron.png" class="sports90 at" height="96px">
-                <span class="mask"></span>
-              </div>
-
-              Aviron
-            </a>
-          </li>
-          <li class="box same-height-left" style="height: 129px;">
-            <a href="/fr/athletisme">
-              <div class="flag-box">
-                <img src="IMG_SPORTS/Natation.png" class="sports90 at" height="96px">
-                <span class="mask"></span>
-              </div>
-
-              Natation
-            </a>
-          </li>
-          <li class="box same-height-left" style="height: 129px;">
-            <a href="/fr/athletisme">
-              <div class="flag-box">
-                <img src="IMG_SPORTS/Aviron.png" class="sports90 at" height="96px">
-                <span class="mask"></span>
-              </div>
-
-              Aviron
-            </a>
-          </li>
-          <li class="box same-height-left" style="height: 129px;">
-            <a href="/fr/athletisme">
-              <div class="flag-box">
-                <img src="IMG_SPORTS/Aviron.png" class="sports90 at" height="96px">
-                <span class="mask"></span>
-              </div>
-
-              Aviron
-            </a>
-          </li>
-          <li class="box same-height-left" style="height: 129px;">
-            <a href="/fr/athletisme">
-              <div class="flag-box">
-                <img src="IMG_SPORTS/Aviron.png" class="sports90 at" height="96px">
-                <span class="mask"></span>
-              </div>
-
-              Aviron
-            </a>
-          </li>
-          <li class="box same-height-left" style="height: 129px;">
-            <a href="/fr/athletisme">
-              <div class="flag-box">
-                <img src="IMG_SPORTS/Aviron.png" class="sports90 at" height="96px">
-                <span class="mask"></span>
-              </div>
-
-              Aviron
-            </a>
-          </li>
-          <li class="box same-height-left" style="height: 129px;">
-            <a href="/fr/athletisme">
-              <div class="flag-box">
-                <img src="IMG_SPORTS/Plongeon.png" class="sports90 at" height="96px">
-                <span class="mask"></span>
-              </div>
-
-              Plongeon
-            </a>
-          </li>
-          <li class="box same-height-left" style="height: 129px;">
-            <a href="/fr/athletisme">
-              <div class="flag-box">
-                <img src="IMG_SPORTS/Aviron.png" class="sports90 at" height="96px">
-                <span class="mask"></span>
-              </div>
-
-              Aviron
-            </a>
-          </li>
-          <li class="box same-height-left" style="height: 129px;">
-            <a href="/fr/athletisme">
-              <div class="flag-box">
-                <img src="IMG_SPORTS/Aviron.png" class="sports90 at" height="96px">
-                <span class="mask"></span>
-              </div>
-
-              Aviron
-            </a>
-          </li>
-          <li class="box same-height-left" style="height: 129px;">
-            <a href="/fr/athletisme">
-              <div class="flag-box">
-                <img src="IMG_SPORTS/Aviron.png" class="sports90 at" height="96px">
-                <span class="mask"></span>
-              </div>
-
-              Aviron
-            </a>
-          </li>
-          <li class="box same-height-left" style="height: 129px;">
-            <a href="/fr/athletisme">
-              <div class="flag-box">
-                <img src="IMG_SPORTS/Aviron.png" class="sports90 at" height="96px">
-                <span class="mask"></span>
-              </div>
-
-              Aviron
-            </a>
-          </li>
-          <li class="box same-height-left" style="height: 129px;">
-            <a href="/fr/athletisme">
-              <div class="flag-box">
-                <img src="IMG_SPORTS/Aviron.png" class="sports90 at" height="96px">
-                <span class="mask"></span>
-              </div>
-
-              Aviron
-            </a>
-          </li>
-          <li class="box same-height-left" style="height: 129px;">
-            <a href="/fr/athletisme">
-              <div class="flag-box">
-                <img src="IMG_SPORTS/Aviron.png" class="sports90 at" height="96px">
-                <span class="mask"></span>
-              </div>
-
-              Aviron
-            </a>
-          </li>
+          </li>';}?>
         </ul>
       </div>
     </section>
