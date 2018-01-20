@@ -61,7 +61,7 @@ $resultat = $uncontroleur->selectAll2();
             </a>
            <br>
            <br>
-            <h3 style="font-size:25px;"><a href="vueEvenements.php?id='.$unResultat['ID_EVENEMENT'].'"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">'.$unResultat["LIBELLE_EVENEMENT"].'</font></font></a></h3>
+            <h3 style="font-size:25px;font-family: initial;"><a href="vueEvenements.php?id='.$unResultat['ID_EVENEMENT'].'"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">'.$unResultat["LIBELLE_EVENEMENT"].'</font></font></a></h3>
         </center>
             <br>
         
