@@ -40,7 +40,6 @@
      <h2 class="text-center text-uppercase text-white" style="font-size: 25px;font-family: initial;color:#333!important;">Résultats</h2>
   <div class="container">
     <hr style="border-top: 1px solid gray;width: 50%">
-      <br>
     <div class="row">
         <div class="col-xl-12">
             <?php
