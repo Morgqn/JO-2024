@@ -45,9 +45,9 @@ $resultat = $uncontroleur->selectAll2();
 <body id="page-top">
  <?php include("Pages/nav.php") ?>
  <section class="bg-primary text-white mb-0" id="about" style="background-color: #222222d6!important;">
-     <h2 class="text-center text-uppercase text-white" style="font-size: 28px;">Liste des évènements</h2>
+     <h2 class="text-center text-uppercase text-white" style="font-size: 25px; font-family: initial;">Liste des évènements</h2>
   <div class="container">
-    <hr>
+    <hr style="border-top: 1px solid white;width: 50%">
       <br>
     <div class="row">
    <div class="col">
@@ -124,7 +124,6 @@ $resultat = $uncontroleur->selectAll2();
         </div>
         <div class="w-100"></div>    
         </div>
-
         </div>
 </section>
 <?php include("Pages/footer.php"); ?>

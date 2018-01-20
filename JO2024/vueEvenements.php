@@ -37,9 +37,9 @@
  <?php include("Pages/nav.php") ?>
  <section class="bg-primary text-white mb-0" id="about" style="background-color: #222222d6!important;">
      <br>
-     <h2 class="text-center text-uppercase text-white" style="font-size: 28px;">photos de "nom de l'evenement".</h2>
+     <h2 class="text-center text-uppercase text-white" style="font-size: 25px;font-family: initial;">photos de "nom de l'évènement".</h2>
   <div class="container">
-    <hr>
+    <hr style="border-top: 1px solid white;width: 50%">
       <br>
     <div class="row">
         <div class="col">
