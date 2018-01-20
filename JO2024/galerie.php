@@ -26,7 +26,8 @@ session_start();
     <section class="portfolio" id="portfolio">
         <div class="container" style="padding-top: 50px;">
             <h2 class="text-center text-uppercase text-secondary mb-0" style="font-size :25px">Galerie</h2>
-            <hr class="star-dark mb-5">
+            <hr style="width:50%;">
+            <br>
             <div class="row">
                 <div class="col-md-6 col-lg-4">
                     <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
