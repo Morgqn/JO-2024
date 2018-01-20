@@ -39,7 +39,7 @@
 		{
 			if($this->pdo != null)
 			{
-				$requete = 'SELECT l.LIBELLE AS LIBELLE_LIEU,e.LIBELLE AS LIBELLE_EVENEMENT,l.ADRESSE,e.DATE,e.TIME,e.ID_EVENEMENT FROM Lieu AS l, Evenement AS e WHERE l.ID_LIEU = e.ID_LIEU';
+				$requete = 'SELECT l.LIBELLE AS LIBELLE_LIEU,e.LIBELLE AS LIBELLE_EVENEMENT,l.ADRESSE,e.DATE,e.TIME,e.ID_EVENEMENT,e.IMAGES FROM Lieu AS l, Evenement AS e WHERE l.ID_LIEU = e.ID_LIEU';
 				$select = $this->pdo->prepare($requete);
 				$select->execute();
 				$resultats = $select->fetchAll();

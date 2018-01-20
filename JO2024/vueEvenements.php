@@ -1,3 +1,5 @@
+<?php 
+                session_start();?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -44,7 +46,6 @@
     <div class="row">
         <div class="col">
             <?php
-                session_start();
                     include("controller.php");
 
     

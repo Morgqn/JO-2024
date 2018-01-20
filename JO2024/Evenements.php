@@ -49,83 +49,28 @@ $resultat = $uncontroleur->selectAll2();
   <div class="container">
     <hr style="border-top: 1px solid white;width: 50%">
       <br>
-    <div class="row">
-   <div class="col">
-       <center>
-        <a href="/photos/olympic-day">
+    <div class="row">  
+        <?php
+        foreach ($resultat as $unResultat) {
+          $ImagesArray = explode(',',$unResultat["IMAGES"]);
+            $miniature = $ImagesArray[1];
+        echo '<div class="col"><center>
+        <a href="vueEvenements.php?id='.$unResultat['ID_EVENEMENT'].'">
         <picture class="img">
-            <img srcset="https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|340:340&amp;crop=340:340;*,*, https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|680:680&amp;crop=680:680;*,* 2x" alt=""></picture>
+            <img style="width: 400px; height:200px" src="evenement_images/'.$unResultat["DATE"].$unResultat["LIBELLE_LIEU"].$miniature.'" alt=""></picture>
             </a>
            <br>
            <br>
-            <h3 style="font-size:25px;"><a href="/photos/olympic-day"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Journée olympique</font></font></a></h3>
-        </center>
-            <br>
-        </div>
-    <div class="col"><center>
-        <a href="/photos/olympic-day">
-        <picture class="img">
-            <img srcset="https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|340:340&amp;crop=340:340;*,*, https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|680:680&amp;crop=680:680;*,* 2x" alt=""></picture>
-            </a>
-           <br>
-           <br>
-            <h3 style="font-size:25px;"><a href="/photos/olympic-day"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Journée olympique</font></font></a></h3>
-        </center>
-            <br>
-        </div>
-    <div class="w-100"></div>
-        <br>
-    <div class="col"><center>
-        <a href="/photos/olympic-day">
-        <picture class="img">
-            <img srcset="https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|340:340&amp;crop=340:340;*,*, https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|680:680&amp;crop=680:680;*,* 2x" alt=""></picture>
-            </a>
-           <br>
-           <br>
-            <h3 style="font-size:25px;"><a href="/photos/olympic-day"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Journée olympique</font></font></a></h3>
-        </center>
-            <br>
-        </div>
-        <div class="col"><center>
-        <a href="/photos/olympic-day">
-        <picture class="img">
-            <img srcset="https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|340:340&amp;crop=340:340;*,*, https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|680:680&amp;crop=680:680;*,* 2x" alt=""></picture>
-            </a>
-           <br>
-           <br>
-            <h3 style="font-size:25px;"><a href="/photos/olympic-day"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Journée olympique</font></font></a></h3>
-        </center>
-            <br>
-        </div>
- <div class="w-100"></div>
-        <br>
-        <div class="col"><center>
-        <a href="/photos/olympic-day">
-        <picture class="img">
-            <img srcset="https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|340:340&amp;crop=340:340;*,*, https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|680:680&amp;crop=680:680;*,* 2x" alt=""></picture>
-            </a>
-           <br>
-           <br>
-            <h3 style="font-size:25px;"><a href="/photos/olympic-day"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Journée olympique</font></font></a></h3>
+            <h3 style="font-size:25px;"><a href="vueEvenements.php?id='.$unResultat['ID_EVENEMENT'].'"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">'.$unResultat["LIBELLE_EVENEMENT"].'</font></font></a></h3>
         </center>
             <br>
         
-        </div>
-        <div class="col"><center>
-        <a href="/photos/olympic-day">
-        <picture class="img">
-            <img srcset="https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|340:340&amp;crop=340:340;*,*, https://stillmed.olympic.org/media/Photos/2013/07/13/National%20Olympic%20Committee%20-%20Singapore_243267.jpg?interpolation=lanczos-none&amp;fit=around|680:680&amp;crop=680:680;*,* 2x" alt=""></picture>
-            </a>
-           <br>
-           <br>
-            <h3 style="font-size:25px;"><a href="/photos/olympic-day"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Journée olympique</font></font></a></h3>
-        </center>
-            <br>
-        </div>
-        <div class="w-100"></div>    
+        </div>';}?>
+   
         </div>
         </div>
 </section>
+<div class="w-100"></div>    
 <?php include("Pages/footer.php"); ?>
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
 <div class="scroll-to-top d-lg-none position-fixed ">
