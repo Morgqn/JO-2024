@@ -33,8 +33,18 @@
     margin-bottom: 40px;
     padding-top: 40px;
 }
+.sportifs  {
+    overflow: hidden;
+    font-size: 1.143em;
+    line-height: 1.125em;
+    font-weight: 700;
+    margin-top: 80px;
+    list-style-type: none;
+    display: block;
+    margin: auto 60px;
+}
 
-.countries {
+.countries ,.sportifs  {
     overflow: hidden;
     font-size: 1.143em;
     line-height: 1.125em;
@@ -55,20 +65,27 @@
     min-height: 120px;
     padding: 0 18px;
 }
+.sportifs .box {
+    float: left;
+    text-align: center;
+    margin: 0 0 30px;
+    min-height: 120px;
+    padding: 0 18px;
+}
 
-.countries .box>a {
+.countries .box>a , .sportifs .box>a {
     display: inline-block;
     vertical-align: top;
 }
 
-.countries a {
+.countries a, .sportifs a {
     text-decoration: none;
     color: #bababa;
     font: 15px/18px Trade-Gothic-W-Cond-Bold, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
 }
 
-.countries a:hover {
+.countries a:hover,.sportifs a:hover {
     color: gold !important;
 }
 
@@ -80,6 +97,18 @@
     background: 0 0;
 }
 
+
+.sportifs90 {
+    background-position: 0 -2500px;
+        height: 216px !important;
+    max-width: 350 !important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-bottom: 15px;
+}
 .sports90 {
     background-position: 0 -2500px;
     border: 3.3px solid black;
@@ -89,6 +118,7 @@
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+
 
 .sports90:hover {
     border-color: grey;
