@@ -88,7 +88,7 @@
                 echo '<source srcset="avatars/'.$sportifProfil.'" media="(min-width: 1024px)">
                 <source srcset="'.$sportifProfil.'" media="(min-width: 768px)">
                 <img class="isRadius minBorder resizeImg" src="avatars/'.$sportifProfil.'" alt="img">';?>
-                    </span>
+                
                 </picture>
                 <div class="text-box">
                     <?php echo'<h1 class="h1A">'.$personne['NOM'].' '.$personne['PRENOM'].'</h1>'?>
@@ -118,7 +118,7 @@
                 echo '<source srcset="avatars/'.$sportifProfil.'">
                 <source srcset="'.$sportifProfil.'">
                 <img class="isRadius minBorder resizeImg" src="avatars/'.$sportifProfil.'" alt="img">';?>
-                    </span>
+                    
                 </picture>
                 <div class="text-box">
                     <?php echo'<h1 class="h1A">'.$personne['NOM'].' '.$personne['PRENOM'].'</h1>'?>
@@ -150,13 +150,13 @@
                                 <div class="text-box">
                                     <strong class="title">Sport</strong>
                                     <?php
-                                echo '<a class="aA" href="/fr/badminton">'.$sport['LIBELLE'].'</a>';?>
+                                echo '<a class="aA" href="#">'.$sport['LIBELLE'].'</a>';?>
                                 </div>
                             </li>
                             <li class="liA">
                                 <div class="text-box">
                                     <strong class="title">Pays</strong>
-                                    <?php  echo'<a class="aA" href="/fr/republique-populaire-de-chine">'
+                                    <?php  echo'<a class="aA" href="#">'
                                     .$pays['LIBELLE'].
                                 '</a>'?>
                                 </div>
@@ -164,26 +164,25 @@
                             <li class="liA">
                                 <div class="text-box">
                                     <strong class="title">Age</strong>
-                                    <?php echo '<a class="aA" href="">'.$personne['AGE'].'</a>';?>
+                                    <?php echo '<a class="aA" href="#">'.$personne['AGE'].'</a>';?>
                                 </div>
                             </li>
                             <li class="liA">
                                 <div class="text-box">
                                     <strong class="title">Taille</strong>
-                                    <?php echo '<a class="aA" href="/fr/athenes-2004">'.$sportif['TAILLE'].'</a>';?>
+                                    <?php echo '<a class="aA" href="#">'.$sportif['TAILLE'].'</a>';?>
                                 </div>
                             </li>
                             <li class="liA">
                                 <div class="text-box">
                                     <strong class="title">Poids</strong>
-                                    <?php echo '<a class="aA" href="/fr/athenes-2004">'.$sportif['POIDS'].'</a>';?>
+                                    <?php echo '<a class="aA" href="#">'.$sportif['POIDS'].'</a>';?>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
-        </div>
         </div>
         <!-- Footer And scripts section -->
 
