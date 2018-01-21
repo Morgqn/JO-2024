@@ -80,7 +80,7 @@ $resultat = $uncontroleur->selectAll();
           echo '<li class="box same-height-left" style="margin: 20px 0 30px;">
             <a  href="vueAthletes.php?id='.$unResultat['ID_SPORTIF'].'" >
               <div class="flag-box">
-                <img src="avatars/'.$sportifCover.'" class="sportifs90 at" height="96px">
+                <img src="avatars/'.$sportifCover.'" class="sportifs90 at" height="96px" style="width:100%;">
                 <span class="mask"></span>
               </div>'.$personne['NOM'].' '.$personne['PRENOM'].'
             </a>
