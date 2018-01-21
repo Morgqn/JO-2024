@@ -55,13 +55,13 @@ $resultat = $uncontroleur->selectAll2();
           $ImagesArray = explode(',',$unResultat["IMAGES"]);
             $miniature = $ImagesArray[1];
         echo '<div class="col"><center>
-        <a href="vueEvenements.php?id='.$unResultat['ID_EVENEMENT'].'">
+        <a  href="vueEvenements.php?id='.$unResultat['ID_EVENEMENT'].'">
         <picture class="img">
-            <img style="width: 400px; height:200px" src="evenement_images/'.$unResultat["DATE"].$unResultat["LIBELLE_LIEU"].$miniature.'" alt=""></picture>
+            <img class="imgEvenement" style="width: 400px; height:200px" src="evenement_images/'.$unResultat["DATE"].$unResultat["LIBELLE_LIEU"].$miniature.'" alt=""></picture>
             </a>
            <br>
            <br>
-            <h3 style="font-size:25px;font-family: initial;"><a href="vueEvenements.php?id='.$unResultat['ID_EVENEMENT'].'"><font style="vertical-align: inherit;color:#333!important;"><font style="vertical-align: inherit;">'.$unResultat["LIBELLE_EVENEMENT"].'</font></font></a></h3>
+            <h3  style="font-size:25px;font-family: initial;"><a href="vueEvenements.php?id='.$unResultat['ID_EVENEMENT'].'"><font class="titleEvenement" style="vertical-align: inherit;"><font style="vertical-align: inherit;">'.$unResultat["LIBELLE_EVENEMENT"].'</font></font></a></h3>
         </center>
             <br>
         
