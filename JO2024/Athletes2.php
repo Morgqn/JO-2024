@@ -65,7 +65,7 @@ $resultat = $uncontroleur->selectAll();
         <h2>Liste des sportifs</h2>
       </div>
       <hr class="sportHr">
-      <div class="select-box">
+      <div class="select-box" style="margin-top: 0;">
         <ul class="sportifs">
           <?php
           foreach ($resultat as $unResultat) {
@@ -77,7 +77,7 @@ $resultat = $uncontroleur->selectAll();
             $tab = array("ID_PERSONNE"=>$unResultat['ID_PERSONNE']);
             $personne = $uncontroleur->selectwhere($tab);
 
-          echo '<li class="box same-height-left">
+          echo '<li class="box same-height-left" style="margin: 20px 0 30px;">
             <a  href="vueAthletes.php?id='.$unResultat['ID_SPORTIF'].'" >
               <div class="flag-box">
                 <img src="avatars/'.$sportifCover.'" class="sportifs90 at" height="96px">
