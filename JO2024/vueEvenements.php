@@ -39,6 +39,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="style.css/evenement.css" rel="stylesheet">
     
 
 
@@ -89,8 +90,8 @@
         $tab = array("ID_LIEU"=>$resultat['ID_LIEU']);
         $resultat = $uncontroleur->selectwhere($tab);
 
-        echo '<div class="bodyIframe container col-md-4 well">Lieu : '.$resultat['LIBELLE'].'</div><br>';
-        echo '<div class="bodyIframe container col-md-4 well">Adresse : '.$resultat['ADRESSE'].'</div><br>';
+        echo '<div class="textE bodyIframe container col-md-4 well">Lieu : '.$resultat['LIBELLE'].'</div><br>';
+        echo '<div class="textE bodyIframe container col-md-4 well">Adresse : '.$resultat['ADRESSE'].'</div><br>';
 
         //var_dump($links_array);
 

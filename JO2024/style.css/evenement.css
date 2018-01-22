@@ -73,3 +73,9 @@
     left: 0;
 }
 
+.textE{
+    background: black;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+}
