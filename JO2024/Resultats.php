@@ -55,23 +55,33 @@ $uncontroleur = new Controller("localhost","JObdd","root","root");
         <!-- Header -->
 
 
-        <section class="bg-primary text-white mb-0" id="about">
+        <section class="bg-primary text-white mb-0" id="about" style="background-color:#ffffff!important;">
             <div class="container">
-                <h2 class="text-center text-uppercase text-white" style="font-size : 20px;">Résultats</h2>
-                <hr class="star-light">
+                <br>
+                <h2 class="text-center text-uppercase text-white" style="font-size : 20px;color: #333!important; font-size:25px;">Résultats pour chaque Sports</h2>
+                <hr style="width:50%;">
                 <div class="row">
-                    <div class="col-md-3 sideNav">
-                        <ul class="nav nav-pills nav-stacked ulSideNav" id="buttons" style="display: block;">
-                            <?php
+                    <?php
           $uncontroleur->setTable("Sport");
           $resultat = $uncontroleur->selectAll();
       
           foreach ($resultat as $unResultat) {
 
-            echo '<li ><a href="vueResultats.php?id='.$unResultat['ID_SPORT'].'" target="myframe">'.$unResultat['LIBELLE'].'</a></li>';
+            echo '<center>
+            <table>
+            <td>
+            <div class="col"><a style="color: #333!important;border-style:solid;border-color:black;text-align: justify;padding: 50px;background: lightgray;line-height: 28px;font-family: monospace;font-size: 15px;"href="vueResultats.php?id='.$unResultat['ID_SPORT'].'">'.$unResultat['LIBELLE'].'</a>
+            </td>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            </table></center>';
           }
           ?>
-                        </ul>
+                    
                     </div>
                     <div class="col-md-9 well">
 
