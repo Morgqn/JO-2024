@@ -45,7 +45,7 @@ $resultat = $uncontroleur->selectAll2();
 <body id="page-top">
  <?php include("Pages/nav.php") ?>
  <section class="bg-primary text-white mb-0" id="about" style="background-color:#ffffff!important;">
-     <h2 class="text-center text-uppercase text-white" style="font-size: 25px;color:#333!important;font-family: initial;">Liste des évènements</h2>
+     <h2 class="text-center text-uppercase text-white" style="font-size: 25px;color:#333!important;">Liste des évènements</h2>
   <div class="container">
     <hr style="border-top: 1px solid gray;width: 50%">
       <br>
@@ -61,7 +61,7 @@ $resultat = $uncontroleur->selectAll2();
             </a>
            <br>
            <br>
-            <h3  style="font-size:25px;font-family: initial;"><a href="vueEvenements.php?id='.$unResultat['ID_EVENEMENT'].'"><font class="titleEvenement" style="vertical-align: inherit;"><font style="vertical-align: inherit;">'.$unResultat["LIBELLE_EVENEMENT"].'</font></font></a></h3>
+            <h3  style="font-size:25px;"><a href="vueEvenements.php?id='.$unResultat['ID_EVENEMENT'].'"><font class="titleEvenement" style="vertical-align: inherit;"><font style="vertical-align: inherit;">'.$unResultat["LIBELLE_EVENEMENT"].'</font></font></a></h3>
         </center>
             <br>
         

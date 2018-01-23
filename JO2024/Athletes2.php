@@ -62,7 +62,7 @@ $resultat = $uncontroleur->selectAll();
   <div class="main-holder">
     <section id="summer-sports" class="game-results-box alt" style="margin-top: 70px!important;">
       <div class="heading center" style="margin-top: 0;">
-        <h2>Liste des sportifs</h2>
+        <h2 style="font-size: 25px;">Liste des sportifs</h2>
       </div>
       <hr class="sportHr">
       <div class="select-box" style="margin-top: 0;">
