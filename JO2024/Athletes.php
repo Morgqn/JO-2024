@@ -45,7 +45,7 @@ $resultat = $uncontroleur->selectAll();
 
         <section class="bg-primary text-white mb-0" id="about">
             <div class="container-fluid" style="padding-top: 50px;">
-                <h2 class="text-center text-uppercase text-white titre">Athlètes</h2>
+                <h2 class="text-center text-uppercase text-white" style="font-size: 25px;color:#333!important;">Liste des Athlètes</h2>
                
                 
                 <div class="row" style="padding: 0 150px 0 150px;">
