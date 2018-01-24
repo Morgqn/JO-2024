@@ -115,19 +115,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="medal-box">
-                    <li class="liAA">
-                        <div class="medal liMedal">
-                            <span class="num">2</span>
-                        </div>
-                        <div class="medal  liMedal">
-                            <span class="num silver silverNum">0</span>
-                        </div>
-                        <div class="medal  liMedal">
-                            <span class="num bronze bronzeNum">0</span>
-                        </div>
-                    </li>
-                </ul>
+            
             </article>
             <section class="id-card gallery-js-ready noc-chn">
                 <div class="holder">
