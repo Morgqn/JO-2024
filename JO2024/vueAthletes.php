@@ -98,19 +98,6 @@
                         </div>
                     </div>
                 </div>
-                <ul class="medal-box">
-                    <li>
-                        <div class="medal liMedal">
-                            <span class="num">2</span>
-                        </div>
-                        <div class="medal  liMedal">
-                            <span class="num silver silverNum">0</span>
-                        </div>
-                        <div class="medal  liMedal">
-                            <span class="num bronze bronzeNum">0</span>
-                        </div>
-                    </li>
-                </ul>
             </article>
             <article class="col-lg-12 hasPadding hidden rowVignette">
                 <picture class="image">
